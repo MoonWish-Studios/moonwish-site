@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
     return (
@@ -15,7 +16,26 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>MoonWish Studios</h1>
+                <h1 className="homeText">
+                    Simple web development for
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter
+                                .typeString("Restaurants")
+                                .pauseFor(1500)
+                                .deleteAll()
+                                .typeString("Gyms")
+                                .pauseFor(1500)
+                                .deleteAll()
+                                .typeString("Aerospace companies")
+                                .pauseFor(1500)
+                                .deleteAll()
+                                .typeString("Law firms")
+                                .start();
+                        }}
+                    />
+                </h1>
+                {/* <h1 className={styles.title}>Moonwish Studios</h1> */}
             </main>
 
             <footer className={styles.footer}>
