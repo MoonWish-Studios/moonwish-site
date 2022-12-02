@@ -10,6 +10,7 @@ export default function TypewriterC() {
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
+                            .pauseFor(1000)
                             .typeString("restaurants")
                             .pauseFor(1500)
                             .deleteAll()
@@ -19,7 +20,7 @@ export default function TypewriterC() {
                             .typeString("aerospace companies")
                             .pauseFor(1500)
                             .deleteAll()
-                            .typeString("law firms")
+                            .typeString("your business")
                             .start();
                     }}
                 />
