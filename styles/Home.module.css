@@ -1,50 +1,70 @@
 .container {
-  padding: 0 2rem;
-  color: white;
+    padding: 0 2rem;
+    color: white;
 }
 
 .main {
-  min-height: 100vh;
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 1em;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 5em;
+    font-size: 1em;
 }
 
 .typewriter {
-  display: grid;
-  transform: translateY(-1.5em);
-  grid-template-rows: 1fr 1fr;
-  font-size: 4.5em;
-  margin-left: 1em;
+    grid-row: 0 / 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 4em;
+    margin-top: 3em;
 }
 
 .typewriter1 {
-  grid-row: 0 / 1;
+    grid-row: 0 / 1;
+    display: flex;
+    align-items: flex-end;
 }
 .typewriter2 {
-  grid-row: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.learnButton {
+    width: 10%;
+    height: 12%;
+    grid-column: 0 / 1;
+    grid-row: 2 / 3;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-color: white;
+    border-width: 1px;
+    cursor: pointer;
+    padding: 0;
+    border-style: solid;
+}
+
+.learnButton:hover {
+    background-color: rgb(184, 174, 163);
+    transition: 0.5s;
 }
 
 .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .title a {
-  color: #0070f3;
-  text-decoration: none;
+    color: #0070f3;
+    text-decoration: none;
 }
