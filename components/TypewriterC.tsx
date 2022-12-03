@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import Typewriter from "typewriter-effect";
 import styles from "../styles/Home.module.css";
 
