@@ -18,6 +18,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <TypewriterC />
+        <h1>foajslkafjalskf</h1>
         <Link href="/about">To ABOUT PAGE</Link>
       </main>
     </div>
