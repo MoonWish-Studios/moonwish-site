@@ -1,12 +1,15 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import TypewriterC from "../components/TypewriterC";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
     return (
         <div className={styles.container}>
+            <Navbar />
             <main className={styles.main}>
                 <TypewriterC />
+                <button className={styles.learnButton}>Learn More</button>
             </main>
 
             <footer className={styles.footer}>
