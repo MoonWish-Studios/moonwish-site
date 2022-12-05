@@ -1,12 +1,11 @@
 "use client";
 import Typewriter from "typewriter-effect";
-import styles from "../styles/Home.module.css";
 
 export default function TypewriterC() {
     return (
-        <div className={styles.typewriter}>
-            <div className={styles.typewriter1}>Modern web solutions for</div>
-            <div className={styles.typewriter2}>
+        <div className="typewriter">
+            <div className="typewriter1">Modern web solutions for</div>
+            <div className="typewriter2">
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter

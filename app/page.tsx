@@ -1,7 +1,8 @@
-import styles from "../styles/Home.module.css";
+"use client";
 import TypewriterC from "../components/TypewriterC";
-import Image from "next/image";
-import Link from "next/link";
+import Navbar from "../components/Navbar";
+import Button from "../components/Button/Button";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // imagine each folder as a page
 // a page has the HTML, head.tsx is the <head> part of the HTML. We can add keywords, icons here to improve SEO for this specific page
@@ -14,12 +15,13 @@ import Link from "next/link";
 // head.tsx + layout.tsx are optional files. PAGE.tsx is mandatory as it act as the page
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <TypewriterC />
-        <Link href="/about">To ABOUT PAGE</Link>
-      </main>
-    </div>
-  );
+    return (
+        <div className="container">
+            <Navbar />
+            <main className="main">
+                <TypewriterC />
+                <Button></Button>
+            </main>
+        </div>
+    );
 }
