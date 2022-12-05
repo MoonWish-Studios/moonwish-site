@@ -23,7 +23,7 @@ export default function Home() {
       <main className="main">
         <TypewriterC />
         <Button></Button>
-        empty space
+        empty space more empty space
       </main>
     </div>
   );
