@@ -17,13 +17,14 @@ import { Josefin_Sans } from "@next/font/google";
 const josefin_sans = Josefin_Sans();
 
 export default function Home() {
-    return (
-        <div className={`${josefin_sans.className} container`}>
-            <Navbar />
-            <main className="main">
-                <TypewriterC />
-                <Button></Button>
-            </main>
-        </div>
-    );
+  return (
+    <div className={`${josefin_sans.className} container`}>
+      <Navbar />
+      <main className="main">
+        <TypewriterC />
+        <Button></Button>
+        empty space
+      </main>
+    </div>
+  );
 }
