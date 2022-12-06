@@ -1,17 +1,21 @@
 .nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 99vw;
+    grid-template-columns: 100px auto 100px;
     align-items: center;
+    background-color: var(--color-teritery);
+    padding-left: 35px;
+    padding-right: 49px;
+    height: 5em;
+    border-bottom: 1px solid #212121;
+}
+
+.nav img {
+    height: 5em;
 }
 
 ul {
     padding-inline-start: 0;
-}
-
-.logo {
-    text-decoration: none;
-    color: #ffff;
-    font-weight: semi-bold;
 }
 
 .nav-links {
@@ -22,7 +26,7 @@ ul {
 
 .nav-links ul li {
     display: inline-block;
-    padding: 8px 35px;
+    padding: 0 25px 0 25px;
     padding-inline-start: 0;
     position: relative;
 }
@@ -72,3 +76,8 @@ ul {
     width: 100%;
     transition: 0.3s;
 }
+
+// .nav li.active {
+//     border-bottom: solid 2px white;
+
+// }

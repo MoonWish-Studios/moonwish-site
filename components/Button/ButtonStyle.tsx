@@ -6,11 +6,10 @@ const StyledButton = styled.button`
     border-color: white;
     border-style: solid;
     padding: none;
-    width: 10.3em;
-    height: 3.6em;
+    width: 10em;
+    height: 3.3em;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 16px;
     cursor: pointer;
 

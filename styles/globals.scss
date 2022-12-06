@@ -1,15 +1,19 @@
 @use "./components/navbar.scss";
+@use "./pages/services.scss";
 html,
 body {
     padding: 0;
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background-color: black;
 }
 
 :root {
     --color-primary: white;
     --color-secondary: rgb(184, 174, 163);
-    --color-teritery: blue;
+    --color-teritery: rgba(14, 14, 14, 0.61);
+    --color-fourth: #212121;
 
     // --text-s:
     // --text-b:
@@ -22,7 +26,6 @@ body {
     box-sizing: border-box;
 }
 .container {
-    padding: 0 2rem;
     color: white;
 }
 

@@ -5,12 +5,11 @@ export default function Navbar() {
     return (
         <div className="nav">
             <div>
-                <a href="index.html" className="logo">
-                    <p>MOONWISH</p>
+                <a href="/" className="logo">
                     <Image
                         src={"/assets/logo.svg"}
-                        width="50"
-                        height="50"
+                        width="100"
+                        height="100"
                         alt=""
                     />
                 </a>
@@ -21,9 +20,7 @@ export default function Navbar() {
                     <li>
                         <a href="">Why Us</a>
                     </li>
-                    <li>
-                        <a href="">Services</a>
-                    </li>
+                    <CustomLink href="/services">Services</CustomLink>
                     <li>
                         <a href="">FAQ</a>
                     </li>
@@ -37,5 +34,22 @@ export default function Navbar() {
                 </ul>
             </div>
         </div>
+    );
+}
+
+function CustomLink({
+    href,
+    children,
+    ...props
+}: {
+    href: string;
+    children: string;
+}) {
+    const path = window.location.pathname;
+
+    return (
+        <li className={path === href ? "active" : ""}>
+            <a href={href}>{children}</a>
+        </li>
     );
 }

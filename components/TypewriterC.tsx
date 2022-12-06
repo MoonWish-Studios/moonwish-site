@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 export default function TypewriterC() {
     return (
         <div className="typewriter">
-            <div className="typewriter1">Modern web solutions for</div>
+            <div className="typewriter1">Modern web development for</div>
             <div className="typewriter2">
                 <Typewriter
                     onInit={(typewriter) => {

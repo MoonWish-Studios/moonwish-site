@@ -1,4 +1,5 @@
 import StyledButton from "./ButtonStyle";
+import { Josefin_Sans } from "@next/font/google";
 
 import React from "react";
 
