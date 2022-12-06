@@ -27,4 +27,14 @@ export default function Home() {
             </main>
         </div>
     );
+    return (
+        <div className={`${josefin_sans.className} container`}>
+            <Navbar />
+            <main className="main">
+                <TypewriterC />
+                <Button></Button>
+                empty space more empty space
+            </main>
+        </div>
+    );
 }
