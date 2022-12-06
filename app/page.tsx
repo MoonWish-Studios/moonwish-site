@@ -1,8 +1,6 @@
-"use client";
 import TypewriterC from "../components/TypewriterC";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button/Button";
-import { Josefin_Sans } from "@next/font/google";
 
 // imagine each folder as a page
 // a page has the HTML, head.tsx is the <head> part of the HTML. We can add keywords, icons here to improve SEO for this specific page
@@ -14,17 +12,13 @@ import { Josefin_Sans } from "@next/font/google";
 
 // head.tsx + layout.tsx are optional files. PAGE.tsx is mandatory as it act as the page
 
-const josefin_sans = Josefin_Sans();
-
 export default function Home() {
-    console.log(window.location);
-    return (
-        <div className={`${josefin_sans.className} container`}>
-            <Navbar />
-            <main className="main">
-                <TypewriterC />
-                <Button></Button>
-            </main>
-        </div>
-    );
+  return (
+    <div className="container">
+      <main className="main">
+        {/* <TypewriterC /> */}
+        {/* <Button></Button> */}
+      </main>
+    </div>
+  );
 }

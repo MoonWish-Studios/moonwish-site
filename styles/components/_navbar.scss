@@ -1,80 +1,80 @@
 .nav {
-    display: grid;
-    width: 99vw;
-    grid-template-columns: 100px auto 100px;
-    align-items: center;
-    background-color: var(--color-teritery);
-    padding-left: 35px;
-    padding-right: 49px;
-    height: 5em;
-    border-bottom: 1px solid #212121;
+  display: grid;
+  width: 99vw;
+  grid-template-columns: 100px auto 100px;
+  align-items: center;
+  background-color: var(--color-teritery);
+  padding-left: 35px;
+  padding-right: 49px;
+  height: 5em;
+  border-bottom: 1px solid #212121;
 }
 
 .nav img {
-    height: 5em;
+  height: 5em;
 }
 
 ul {
-    padding-inline-start: 0;
+  padding-inline-start: 0;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links ul li {
-    display: inline-block;
-    padding: 0 25px 0 25px;
-    padding-inline-start: 0;
-    position: relative;
+  display: inline-block;
+  padding: 0 25px 0 25px;
+  padding-inline-start: 0;
+  position: relative;
 }
 
 .nav-links ul li a {
-    text-decoration: none;
-    color: #ffff;
-    font-size: 16px;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 16px;
 }
 
 .contact {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contact ul li a {
-    text-decoration: none;
-    color: #ffff;
-    font-size: 16px;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 16px;
 }
 .contact ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .contact ul li::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    display: block;
-    margin: auto;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
 }
 .contact ul li:hover::after {
-    width: 100%;
-    transition: 0.3s;
+  width: 100%;
+  transition: 0.3s;
 }
 
 .nav-links ul li::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    display: block;
-    margin: auto;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
 }
 .nav-links ul li:hover::after {
-    width: 100%;
-    transition: 0.3s;
+  width: 100%;
+  transition: 0.3s;
 }
 
 // .logoImg {

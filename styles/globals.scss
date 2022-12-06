@@ -1,42 +1,12 @@
-@use "./components/navbar.scss";
-@use "./pages/services.scss";
 @use "./reset";
+@use "./abstracts/utils";
+@use "./abstracts/variables";
+@use "./components/navbar";
+@use "./pages/services";
+@use "./components/footer";
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: black;
-}
-
-:root,
-[data-theme="dark"] {
-  --color-text-primary: #a6a6a6;
-  --color-text-secondary: #5c5c5c;
-  --color-text-third: #212121;
-  --color-text-highlight: #e1e1e1;
-
-  --color-gradient-purple: linear-gradient(
-    90.05deg,
-    #6f2cff -8.52%,
-    #974afa 43.96%,
-    #4b70f3 108.66%
-  );
-
-  --color-border-primary: #5c5c5c;
-  --color-border-secondary: #212121;
-  --color-border-purple: #9847ff;
-
-  // body font size
-  --text-base-size: 1em;
-  // type scale
-  --text-scale-ratio: 1.2;
-  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
-  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
-  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
-  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
-  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
-  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
 }
 
 .test {
@@ -48,9 +18,6 @@ body {
   font-size: var(--text-md);
 }
 
-.dark-theme {
-  color: var;
-}
 * {
   box-sizing: border-box;
 }
@@ -110,22 +77,6 @@ body {
 .learnButton:hover {
   background-color: rgb(184, 174, 163);
   transition: 0.5s;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
 }
 
 .title a {
