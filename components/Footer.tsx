@@ -5,13 +5,15 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-directory">
-        <Image
-          className="footer-logo"
-          width={150}
-          height={60}
-          src="/assets/icons/moonwish-studios.svg"
-          alt="Moonwish Studios Logo"
-        />
+        <Link href="/">
+          <Image
+            className="footer-logo"
+            width={150}
+            height={60}
+            src="/assets/icons/moonwish-studios.svg"
+            alt="Moonwish Studios Logo"
+          />
+        </Link>
         <div className="footer-group">
           <h3>Info</h3>
           <FooterInfo alt="email" src="/assets/icons/email.svg">
@@ -57,7 +59,7 @@ export default function Footer() {
 
 export function FooterInfo({ src, children, alt }: { src: string; children: string; alt: string }) {
   return (
-    <div className="flex-y-center flex-gap-5">
+    <div className="footer-info">
       <Image src={src} width={14} height={14} alt={alt} />
       {children}
     </div>

@@ -1,12 +1,17 @@
-@use "./reset";
+@use "./abstracts/reset";
 @use "./abstracts/utils";
 @use "./abstracts/variables";
+
 @use "./components/navbar";
-@use "./pages/services";
 @use "./components/footer";
+
+@use "./pages/services";
+@use "./pages/error404";
+
 html,
 body {
   background-color: black;
+  color: var(--color-text-primary);
 }
 
 .test {
