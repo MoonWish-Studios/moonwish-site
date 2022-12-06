@@ -6,11 +6,11 @@ export default function Navbar() {
         <div className="nav">
             <div>
                 <a href="/" className="logo">
-                    <Image
+                    <img
                         src={"/assets/logo.svg"}
-                        width="100"
-                        height="100"
+                        style={{ width: 100, height: "auto" }}
                         alt=""
+                        className="logoImg"
                     />
                 </a>
             </div>
