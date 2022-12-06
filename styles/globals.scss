@@ -1,72 +1,104 @@
 @use "./components/navbar.scss";
 @use "./pages/services.scss";
+@use "./reset";
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: black;
 }
 
-:root {
-    --color-primary: white;
-    --color-secondary: rgb(184, 174, 163);
-    --color-teritery: rgba(14, 14, 14, 0.61);
-    --color-fourth: #212121;
+:root,
+[data-theme="dark"] {
+  --color-text-primary: #a6a6a6;
+  --color-text-secondary: #5c5c5c;
+  --color-text-third: #212121;
+  --color-text-highlight: #e1e1e1;
 
-    // --text-s:
-    // --text-b:
+  --color-gradient-purple: linear-gradient(
+    90.05deg,
+    #6f2cff -8.52%,
+    #974afa 43.96%,
+    #4b70f3 108.66%
+  );
+  --color-gradient-moonwish: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(270deg, #ffffff -12.09%, rgba(183, 174, 217, 0.9) 119.28%);
+
+  --color-border-primary: #5c5c5c;
+  --color-border-secondary: #212121;
+  --color-border-purple: #9847ff;
+
+  // body font size
+  --text-base-size: 1em;
+
+  // type scale
+  --text-scale-ratio: 1.2;
+  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+}
+
+.test {
+  color: white;
+  font-size: var(--text-xl);
+}
+.test2 {
+  color: white;
+  font-size: var(--text-md);
 }
 
 .dark-theme {
-    color: var;
+  color: var;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container {
-    color: white;
+  color: white;
 }
 
 .main {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 5em;
-    font-size: 1em;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 5em;
+  font-size: 1em;
 }
 
 .typewriter {
-    grid-row: 0 / 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    font-size: 4em;
-    margin-top: 3em;
+  grid-row: 0 / 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  font-size: 4em;
+  margin-top: 3em;
 }
 
 .typewriter1 {
-    grid-row: 0 / 1;
-    display: flex;
-    align-items: flex-end;
+  grid-row: 0 / 1;
+  display: flex;
+  align-items: flex-end;
 }
 .typewriter2 {
-    grid-row: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .learnButton {
-    width: 20px;
-    height: 16px;
-    grid-column: 0 / 1;
-    grid-row: 2 / 3;
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    border-color: white;
-    border-width: 1px;
-    cursor: pointer;
-    padding: 0;
-    border-style: solid;
+  width: 20px;
+  height: 16px;
+  grid-column: 0 / 1;
+  grid-row: 2 / 3;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border-color: white;
+  border-width: 1px;
+  cursor: pointer;
+  padding: 0;
+  border-style: solid;
 }
 // border-radius: 4px;
 //     background: #256ce1;
@@ -79,27 +111,27 @@ body {
 //     text-decoration: none;
 
 .learnButton:hover {
-    background-color: rgb(184, 174, 163);
-    transition: 0.5s;
+  background-color: rgb(184, 174, 163);
+  transition: 0.5s;
 }
 
 .footer {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .title a {
-    color: #0070f3;
-    text-decoration: none;
+  color: #0070f3;
+  text-decoration: none;
 }
