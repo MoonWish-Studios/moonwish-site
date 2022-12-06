@@ -21,8 +21,6 @@ body {
     #974afa 43.96%,
     #4b70f3 108.66%
   );
-  --color-gradient-moonwish: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    linear-gradient(270deg, #ffffff -12.09%, rgba(183, 174, 217, 0.9) 119.28%);
 
   --color-border-primary: #5c5c5c;
   --color-border-secondary: #212121;
@@ -30,7 +28,6 @@ body {
 
   // body font size
   --text-base-size: 1em;
-
   // type scale
   --text-scale-ratio: 1.2;
   --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
