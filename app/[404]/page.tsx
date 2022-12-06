@@ -1,6 +1,5 @@
 "use client";
 import React, { Suspense } from "react";
-import Lottie from "lottie-react";
 import { Player } from "@lottiefiles/react-lottie-player";
 export default function Custom404() {
   return (
