@@ -10,8 +10,8 @@
 
 html,
 body {
-  background-color: black;
-  color: var(--color-text-primary);
+    background-color: black;
+    color: var(--color-text-primary);
 }
 
 :root {
@@ -19,60 +19,61 @@ body {
     --color-secondary: rgb(184, 174, 163);
     --color-teritery: rgba(14, 14, 14, 0.61);
     --color-fourth: #212121;
+}
 .test {
-  color: white;
-  font-size: var(--text-xl);
+    color: white;
+    font-size: var(--text-xl);
 }
 .test2 {
-  color: white;
-  font-size: var(--text-md);
+    color: white;
+    font-size: var(--text-md);
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 .container {
-  color: white;
+    color: white;
 }
 
 .main {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  margin-left: 5em;
-  font-size: 1em;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 5em;
+    font-size: 1em;
 }
 
 .typewriter {
-  grid-row: 0 / 1;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  font-size: 4em;
-  margin-top: 3em;
+    grid-row: 0 / 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 4em;
+    margin-top: 3em;
 }
 
 .typewriter1 {
-  grid-row: 0 / 1;
-  display: flex;
-  align-items: flex-end;
+    grid-row: 0 / 1;
+    display: flex;
+    align-items: flex-end;
 }
 .typewriter2 {
-  grid-row: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .learnButton {
-  width: 20px;
-  height: 16px;
-  grid-column: 0 / 1;
-  grid-row: 2 / 3;
-  background-color: black;
-  color: white;
-  font-size: 18px;
-  border-color: white;
-  border-width: 1px;
-  cursor: pointer;
-  padding: 0;
-  border-style: solid;
+    width: 20px;
+    height: 16px;
+    grid-column: 0 / 1;
+    grid-row: 2 / 3;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-color: white;
+    border-width: 1px;
+    cursor: pointer;
+    padding: 0;
+    border-style: solid;
 }
 // border-radius: 4px;
 //     background: #256ce1;
@@ -85,11 +86,11 @@ body {
 //     text-decoration: none;
 
 .learnButton:hover {
-  background-color: rgb(184, 174, 163);
-  transition: 0.5s;
+    background-color: rgb(184, 174, 163);
+    transition: 0.5s;
 }
 
 .title a {
-  color: #0070f3;
-  text-decoration: none;
+    color: #0070f3;
+    text-decoration: none;
 }

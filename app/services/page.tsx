@@ -3,7 +3,7 @@ import { Josefin_Sans } from "@next/font/google";
 import Navbar from "../../components/Navbar";
 import ServiceCard from "../../components/ServiceCard";
 
-const josefin_sans = Josefin_Sans();
+const josefin_sans = Josefin_Sans({});
 
 export default function Services() {
     return (
@@ -57,7 +57,5 @@ export default function Services() {
                 </div>
             </main>
         </div>
-      </main>
-    </div>
-  );
+    );
 }
