@@ -57,5 +57,7 @@ export default function Services() {
                 </div>
             </main>
         </div>
-    );
+      </main>
+    </div>
+  );
 }

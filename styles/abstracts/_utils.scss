@@ -1,0 +1,21 @@
+.flex-gap-5 {
+  gap: 5px;
+}
+.flex-gap-10 {
+  gap: 10px;
+}
+
+.flex-y-center {
+  display: flex;
+  align-items: center;
+}
+
+.next-link {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+
+  transition: all 0.1s linear;
+  &:hover {
+    color: var(--color-text-primary);
+  }
+}
