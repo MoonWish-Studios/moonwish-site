@@ -17,7 +17,6 @@ import { Josefin_Sans } from "@next/font/google";
 const josefin_sans = Josefin_Sans();
 
 export default function Home() {
-    console.log(window.location);
     return (
         <div className={`${josefin_sans.className} container`}>
             <Navbar />

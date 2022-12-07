@@ -10,13 +10,10 @@ body {
 }
 
 :root {
-    --color-primary: white;
+    --color-primary: rgba(255, 255, 255, 0.69);
     --color-secondary: rgb(184, 174, 163);
     --color-teritery: rgba(14, 14, 14, 0.61);
     --color-fourth: #212121;
-
-    // --text-s:
-    // --text-b:
 }
 
 .dark-theme {
