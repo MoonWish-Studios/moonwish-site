@@ -49,4 +49,11 @@ footer {
   .footer-logo {
     order: 2;
   }
+  .footer-directory {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-logo {
+    order: 1;
+  }
 }

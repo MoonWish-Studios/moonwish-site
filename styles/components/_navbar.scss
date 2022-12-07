@@ -33,8 +33,11 @@ ul {
 
 .nav-links ul li a {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-text-navlink);
     font-size: 16px;
+    &:hover {
+        color: var(--color-text-primary);
+    }
 }
 
 .contact {
@@ -63,20 +66,6 @@ ul {
     width: 100%;
     transition: 0.3s;
 }
-
-.nav-links ul li::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    display: block;
-    margin: auto;
-}
-.nav-links ul li:hover::after {
-    width: 100%;
-    transition: 0.3s;
-}
-
 // .logoImg {
 //     height: auto;
 // }

@@ -1,13 +1,10 @@
 "use client";
-import { Josefin_Sans } from "@next/font/google";
 import Navbar from "../../components/Navbar";
 import ServiceCard from "../../components/ServiceCard";
 
-const josefin_sans = Josefin_Sans({});
-
 export default function Services() {
     return (
-        <div className={`${josefin_sans.className} container`}>
+        <div className={`container`}>
             <Navbar />
             <main className="main">
                 <div className="serviceContainer">
