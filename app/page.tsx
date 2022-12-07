@@ -16,17 +16,6 @@ import { Player } from "@lottiefiles/react-lottie-player";
 export default function Home() {
   return (
     <div className={`container`}>
-      <Navbar />
-      <Player
-        autoplay
-        loop
-        src="https://assets9.lottiefiles.com/packages/lf20_qhzucuii.json"
-        style={{
-          height: "300px",
-          width: "300px",
-        }}
-      />
-
       <main className="main">
         <TypewriterC />
         <Button></Button>
