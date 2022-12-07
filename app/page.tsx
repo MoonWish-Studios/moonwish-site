@@ -1,7 +1,8 @@
+"use client";
 import TypewriterC from "../components/TypewriterC";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button/Button";
-
+import { Player } from "@lottiefiles/react-lottie-player";
 // imagine each folder as a page
 // a page has the HTML, head.tsx is the <head> part of the HTML. We can add keywords, icons here to improve SEO for this specific page
 // in layout.tsx - we have the body of the html, the {children} = this page.tsx file.
@@ -14,11 +15,30 @@ import Button from "../components/Button/Button";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={`container`}>
+      <Navbar />
+      <Player
+        autoplay
+        loop
+        src="https://assets9.lottiefiles.com/packages/lf20_qhzucuii.json"
+        style={{
+          height: "300px",
+          width: "300px",
+        }}
+      />
+
       <main className="main">
-        {/* <TypewriterC /> */}
-        {/* <Button></Button> */}
+        <TypewriterC />
+        <Button></Button>
       </main>
     </div>
   );
+  // return (
+  //   <div className="container">
+  //     <main className="main">
+  //       {/* <TypewriterC /> */}
+  //       {/* <Button></Button> */}
+  //     </main>
+  //   </div>
+  // );
 }
