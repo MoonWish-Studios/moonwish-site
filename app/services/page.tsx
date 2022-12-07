@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "../../components/Navbar";
 import ServiceCard from "../../components/ServiceCard";
 
 export default function Services() {
