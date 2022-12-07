@@ -41,10 +41,11 @@ footer {
 }
 
 @media (max-width: 960px) {
-  .flex-directory {
+  .footer-directory {
     flex-direction: column;
     gap: 50px;
   }
+
   .footer-logo {
     order: 1;
   }
