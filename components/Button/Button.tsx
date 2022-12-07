@@ -1,13 +1,21 @@
 "use client";
 import StyledButton from "./ButtonStyle";
-import { Josefin_Sans } from "@next/font/google";
 
 import React from "react";
-
+import Link from "next/link";
 function clickMe() {
-  console.log("Clicked");
+    console.log("Clicked");
 }
 
 export default function Button() {
-  return <StyledButton onClick={clickMe}>Learn More</StyledButton>;
+    return (
+        <>
+            {/* <button onClick={clickMe}> */}
+            {/* <p>Learn More</p> */}
+            <Link className="next-link button" href="#">
+                Learn More
+            </Link>
+            {/* </button> */}
+        </>
+    );
 }

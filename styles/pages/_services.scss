@@ -11,8 +11,14 @@
 
 .serviceGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 3em;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+    grid-template-columns: repeat(4, 19vw);
+    // grid-template-rows: repeat(auto-fill, minmax(250px, 300px));
+    // grid-auto-rows: max-content;
+    // grid-auto-flow: row column;
+    // grid-gap: 3em;
+    grid-gap: 45px;
 }
 
 .serviceCard {
@@ -21,13 +27,13 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-text-primary);
     border-radius: 10px;
-    width: 20vw;
-    height: 19vw;
+    width: 19vw;
+    height: 18vw;
     padding: 25px 20px 10px 20px;
     line-height: 1.3;
-    color: var(--color-primary);
+    color: var(--color-text-primary);
 }
 
 .serviceDescription {
@@ -37,16 +43,64 @@
 
 .serviceTitle {
     margin: 15px 0 12px;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
-.serviceContainer {
-    max-width: 90vw;
-}
-
-@media (max-width: 1225px) {
+@media (max-width: 1100px) {
     .serviceGrid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 25vw);
+    }
+    .serviceCard {
+        width: 25vw;
+        height: 24vw;
+    }
+    .serviceDescription {
+        font-size: 1.5vw;
+    }
+    .serviceTitle {
+        font-size: 1.7vw;
+    }
+    .serviceCard img {
+        width: 2.8vw;
     }
 }
+
+@media (max-width: 775px) {
+    .serviceGrid {
+        grid-template-columns: repeat(2, 35vw);
+    }
+    .serviceCard {
+        width: 35vw;
+        height: 34vw;
+    }
+    .serviceDescription {
+        font-size: 2.1vw;
+    }
+    .serviceTitle {
+        font-size: 2.3vw;
+    }
+}
+@media (max-width: 512px) {
+    .serviceGrid {
+        grid-template-columns: repeat(1, 75vw);
+    }
+    .serviceCard {
+        width: 75vw;
+        height: 74vw;
+    }
+    .serviceDescription {
+        font-size: 4.3vw;
+    }
+    .serviceTitle {
+        font-size: 4.5vw;
+    }
+    .serviceCard img {
+        width: 10vw;
+    }
+}
+// @media (max-width: 1225px) {
+//     .serviceGrid {
+//         grid-template-columns: 1fr 1fr 1fr 1fr;
+//         grid-template-rows: 1fr 1fr 1fr;
+//     }
+// }
