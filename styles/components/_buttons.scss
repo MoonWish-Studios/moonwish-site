@@ -1,21 +1,37 @@
 .button {
-    background-color: #000000;
-    border-width: 1px;
-    border-color: white;
-    border-style: solid;
-    padding: none;
-    width: 10em;
-    height: 3.3em;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #000000;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  padding: none;
+  width: 10em;
+  height: 3.3em;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &:hover {
-        transition: 0.1s ease-in-out;
-        transform: translateY(-2.5px);
-    }
+  &:hover {
+    transition: 1s ease-in-out;
+    transform: translateY(-2.5px);
+  }
+}
+
+.colorful-button {
+  background-image: var(--color-gradient-purple);
+  border-radius: var(--border-radius);
+  padding: 10px 5px;
+  color: white;
+  font-family: var(--josefin-sans);
+  background-size: 200% auto;
+
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s all linear;
+  &:hover {
+    background-position: right top;
+  }
 }

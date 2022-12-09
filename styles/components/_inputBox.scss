@@ -16,7 +16,7 @@ h1 {
 
 .input-reg {
   all: initial;
-  border: 1.2px solid var(--color-border-secondary);
+  border: 1px solid var(--color-text-secondary);
   border-radius: var(--border-radius);
   padding: 6px 15px 4px 15px;
   min-width: 200px;
@@ -42,8 +42,4 @@ h1 {
   width: 100%;
   min-height: 150px;
   padding: 15px;
-}
-
-.grid-span-col {
-  grid-column: 1 / span 2;
 }

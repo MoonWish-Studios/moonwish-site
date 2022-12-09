@@ -19,3 +19,7 @@
     color: var(--color-text-primary);
   }
 }
+
+.grid-span-col {
+  grid-column: 1 / span 2;
+}
