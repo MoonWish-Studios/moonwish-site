@@ -26,6 +26,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 10vh 10vw;
+  border-top: 1px solid var(--color-border-secondary);
 }
 
 .footer-group {
@@ -48,12 +49,5 @@ footer {
 
   .footer-logo {
     order: 2;
-  }
-  .footer-directory {
-    flex-direction: column;
-    gap: 50px;
-  }
-  .footer-logo {
-    order: 1;
   }
 }

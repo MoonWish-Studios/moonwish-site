@@ -5,94 +5,42 @@
 @use "./components/navbar";
 @use "./components/footer";
 @use "./components/buttons";
+@use "./components/inputBox";
+@use "./components/typewriter";
 
 @use "./pages/services";
 @use "./pages/error404";
+@use "./pages/contact";
 
 html,
 body {
-    background-color: black;
-    color: var(--color-text-primary);
+  background-color: black;
+  color: var(--color-text-primary);
 }
 
-:root {
-    --color-primary: rgba(255, 255, 255, 0.69);
-    --color-secondary: rgb(184, 174, 163);
-    --color-teritery: rgba(14, 14, 14, 0.61);
-    --color-fourth: #212121;
-}
-.test {
-    color: white;
-    font-size: var(--text-xl);
-}
-.test2 {
-    color: white;
-    font-size: var(--text-md);
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  // -webkit-box-shadow: 0 0 0 30px #000000 inset !important;
+  -webkit-text-fill-color: var(--color-text-primary) !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-.container {
-    color: white;
+
+label {
+  color: var(--color-text-secondary);
+  display: block;
+  font-size: 0.75rem;
 }
 
 .main {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 5em;
-    font-size: 1em;
-}
-
-.typewriter {
-    grid-row: 0 / 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    font-size: 4em;
-    margin-top: 3em;
-}
-
-.typewriter1 {
-    grid-row: 0 / 1;
-    display: flex;
-    align-items: flex-end;
-}
-.typewriter2 {
-    grid-row: 2 / 3;
-}
-
-.learnButton {
-    width: 20px;
-    height: 16px;
-    grid-column: 0 / 1;
-    grid-row: 2 / 3;
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    border-color: white;
-    border-width: 1px;
-    cursor: pointer;
-    padding: 0;
-    border-style: solid;
-    border-radius: 100px;
-}
-// border-radius: 4px;
-//     background: #256ce1;
-//     padding: 10px 22px;
-//     color: #fff;
-//     border: none;
-//     outline: none;
-//     cursor: pointer;
-//     transition: all 0.2s ease-in-out;
-//     text-decoration: none;
-
-.learnButton:hover {
-    background-color: rgb(184, 174, 163);
-    transition: 0.5s;
-}
-
-.title a {
-    color: #0070f3;
-    text-decoration: none;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 5em;
+  font-size: 1em;
 }
