@@ -4,14 +4,16 @@ import LottieAstronaut from "../(components)/LottieAstronaut";
 export default function Contact() {
   return (
     <div className="contact-section">
-      <div>
-        <BigHeader
-          heading="Tell Us About Everything You Need"
-          caption="And We Will Take You To The Moon"
-        />
+      <BigHeader
+        heading="Tell Us About Everything You Need"
+        caption="And We Will Take You To The Moon"
+      />
+      <div className="flex-x-center">
         <ContactDetails />
+        <div className="lottie-container">
+          <LottieAstronaut size={350} />
+        </div>
       </div>
-      <LottieAstronaut />
     </div>
   );
 }
