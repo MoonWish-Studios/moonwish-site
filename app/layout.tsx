@@ -18,7 +18,7 @@ export default function RootLayout({
         <html lang="en" className={josefin_sans.className}>
             <head />
             <body>
-                <Navbar />
+                <MainNavigation />
                 {children}
                 <Footer />
             </body>

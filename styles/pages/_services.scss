@@ -52,12 +52,12 @@
 
 @media (max-width: 1100px) {
     .serviceGrid {
-        grid-template-columns: repeat(3, 23vw);
-        grid-gap: 55px;
+        grid-template-columns: repeat(3, 25vw);
+        grid-gap: 45px;
     }
     .serviceCard {
-        width: 23vw;
-        height: 22vw;
+        width: 25vw;
+        height: 24vw;
     }
     .serviceDescription {
         font-size: 1.5vw;
