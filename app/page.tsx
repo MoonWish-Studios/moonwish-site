@@ -3,6 +3,7 @@ import TypewriterC from "../components/TypewriterC";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button/Button";
 import { Player } from "@lottiefiles/react-lottie-player";
+// import { motion } from "framer-motion/dist/framer-motion";
 // imagine each folder as a page
 // a page has the HTML, head.tsx is the <head> part of the HTML. We can add keywords, icons here to improve SEO for this specific page
 // in layout.tsx - we have the body of the html, the {children} = this page.tsx file.
@@ -14,20 +15,20 @@ import { Player } from "@lottiefiles/react-lottie-player";
 // head.tsx + layout.tsx are optional files. PAGE.tsx is mandatory as it act as the page
 
 export default function Home() {
-  return (
-    <div className={`container`}>
-      <main className="main">
-        <TypewriterC />
-        <Button></Button>
-      </main>
-    </div>
-  );
-  // return (
-  //   <div className="container">
-  //     <main className="main">
-  //       {/* <TypewriterC /> */}
-  //       {/* <Button></Button> */}
-  //     </main>
-  //   </div>
-  // );
+    return (
+        <div className={`container`}>
+            <main className="main">
+                <TypewriterC />
+                <Button></Button>
+            </main>
+        </div>
+    );
+    // return (
+    //   <div className="container">
+    //     <main className="main">
+    //       {/* <TypewriterC /> */}
+    //       {/* <Button></Button> */}
+    //     </main>
+    //   </div>
+    // );
 }
