@@ -57,6 +57,12 @@
     grid-column: span 1;
   }
 
+  .lottie-container {
+    width: 75vw;
+    height: 75vw;
+    min-height: initial;
+    min-width: initial;
+  }
   .contact-details {
     grid-template-columns: 1fr;
     width: 100%;

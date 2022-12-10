@@ -3,7 +3,7 @@ import Image from "next/image";
 import Lottie from "lottie-react";
 import spaceman from "../../public/animations/spaceman.json";
 import { useState } from "react";
-export default function LottieAstronaut({ size }: { size: number }) {
+export default function LottieAstronaut() {
   const [loaded, setLoaded] = useState(false);
 
   return (
