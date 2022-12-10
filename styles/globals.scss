@@ -24,13 +24,14 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
+  // -webkit-box-shadow: 0 0 0 30px #000000 inset !important;
   -webkit-text-fill-color: var(--color-text-primary) !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 
 * {
   box-sizing: border-box;
-  transition: var(--transition-normal);
+  transition: var(--transition-fast);
 }
 
 label {
@@ -46,16 +47,6 @@ h1 {
   margin: 10px 0;
   line-height: 115%;
   margin: 7em 0 8em 7em;
-}
-h2 {
-  font-weight: 800;
-  color: var(--color-text-third);
-  font-size: var(--font-big);
-  margin: 20px 0;
-  width: fit-content;
-  &:hover {
-    color: var(--color-text-primary);
-  }
 }
 
 .main {

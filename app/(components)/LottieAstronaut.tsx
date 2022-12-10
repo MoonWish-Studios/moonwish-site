@@ -14,6 +14,10 @@ export default function LottieAstronaut({ size }: { size: number }) {
         onDOMLoaded={() => {
           setLoaded(true);
         }}
+        style={{
+          width: "100%",
+          height: "100%",
+        }}
       />
       {loaded === false && (
         <div className="lottie-player">
@@ -23,9 +27,6 @@ export default function LottieAstronaut({ size }: { size: number }) {
             src="/assets/graphics/spaceman.png"
             fill
             style={{ objectFit: "contain" }}
-            sizes="(max-width: 768px) 30vw,
-              (max-width: 1200px) 50vw,
-              33vw"
           />
         </div>
       )}

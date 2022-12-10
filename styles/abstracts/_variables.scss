@@ -1,6 +1,6 @@
 :root,
 [data-theme="dark"] {
-  --color-text-white: white;
+  --color-text-white: white
   --color-text-highlight: #e1e1e1;
   --color-text-primary: #a6a6a6;
   --color-text-navlink: #a1a1a1;
@@ -13,6 +13,7 @@
     #974afa 43.96%,
     #4b70f3 108.66%
   );
+
 
   --color-border-primary: #5c5c5c;
   --color-border-secondary: #212121;
@@ -28,10 +29,13 @@
   --font-big: 2.6rem;
   --font-regular: 1rem;
   --font-caption: 0.75rem;
+  --font-large: 4rem;
+  --font-links: 0.8rem;
   --font-labels: 0.75rem;
   --font-links: 0.8rem;
 
   --border-radius: 7px;
+
 
   --padding-big: 75px;
   --padding-med: 20px;
@@ -41,17 +45,12 @@
   --transition-fast: 0.1s all linear;
   --transition-normal: 0.3s all linear;
   --transition-slow: 0.5s all linear;
+}
 
-  @media (max-width: 700px) {
-    --font-big: 1.8rem;
-  }
-  @media (max-width: 600px) {
+
+@media (max-width: 600px) {
+  :root {
     --font-large: 3.3rem;
-    --font-big: 1.2rem;
-  }
 
-  @media (max-width: 360px) {
-    --font-big: 1rem;
-    --font-large: 2.3rem;
   }
 }
