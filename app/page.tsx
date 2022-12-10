@@ -18,6 +18,7 @@ export default function Home() {
       <main className="main">
         {/* <TypewriterC /> */}
         {/* <Button></Button> */}
+        <button>asfasf</button>
       </main>
     </div>
   );
