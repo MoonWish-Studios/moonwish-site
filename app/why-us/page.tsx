@@ -16,7 +16,7 @@ export default function WhyUs() {
     );
 }
 
-export function ListBlock() {
+function ListBlock() {
     return (
         <div>
             <div>
