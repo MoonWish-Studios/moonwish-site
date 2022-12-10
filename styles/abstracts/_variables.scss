@@ -1,23 +1,54 @@
 :root,
 [data-theme="dark"] {
-    --color-text-primary: #a6a6a6;
-    --color-text-navlink: #a1a1a1;
-    --color-text-secondary: #696969;
-    --color-text-third: #212121;
-    --color-text-highlight: #e1e1e1;
+  --color-text-white: white
+  --color-text-highlight: #e1e1e1;
+  --color-text-primary: #a6a6a6;
+  --color-text-navlink: #a1a1a1;
+  --color-text-secondary: #5c5c5c;
+  --color-text-third: #212121;
 
-    --color-gradient-purple: linear-gradient(
-        90.05deg,
-        #6f2cff -8.52%,
-        #974afa 43.96%,
-        #4b70f3 108.66%
-    );
+  --color-gradient-purple: linear-gradient(
+    90.05deg,
+    #6f2cff -8.52%,
+    #974afa 43.96%,
+    #4b70f3 108.66%
+  );
 
-    --color-border-primary: #5c5c5c;
-    --color-border-secondary: #212121;
-    --color-border-purple: #9847ff;
 
-    --color-background-secondary: #0e0e0e;
+  --color-border-primary: #5c5c5c;
+  --color-border-secondary: #212121;
+  --color-border-purple: #9847ff;
 
+  --color-background-secondary: #0e0e0e;
+  --color-background: #060606;
+
+  --big-padding: 40px;
+  --med-padding: 20px;
+
+  --font-regular: 1rem;
+  --font-caption: 0.75rem;
+  --font-large: 4rem;
+  --font-links: 0.8rem;
+  --font-labels: 0.75rem;
+
+  --border-radius: 7px;
+
+
+  --padding-big: 75px;
+  --padding-med: 20px;
+  --padding-reg: 50px;
+  --padding-button: 10px 5px;
+
+  --transition-fast: 0.1s all linear;
+  --transition-normal: 0.3s all linear;
+  --transition-slow: 0.5s all linear;
     --font-size-regular: 1em;
+}
+
+
+@media (max-width: 600px) {
+  :root {
+    --font-large: 3.3rem;
+
+  }
 }

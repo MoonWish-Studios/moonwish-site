@@ -4,7 +4,10 @@ import MainNavigation from "../components/MainNavigation";
 import "../styles/globals.scss";
 
 import { Josefin_Sans } from "@next/font/google";
-const josefin_sans = Josefin_Sans({ subsets: ["latin"] });
+const josefin_sans = Josefin_Sans({
+    subsets: ["latin"],
+    variable: "--josefin-sans",
+});
 
 export default function RootLayout({
     children,
@@ -15,7 +18,7 @@ export default function RootLayout({
         <html lang="en" className={josefin_sans.className}>
             <head />
             <body>
-                <MainNavigation />
+                <Navbar />
                 {children}
                 <Footer />
             </body>

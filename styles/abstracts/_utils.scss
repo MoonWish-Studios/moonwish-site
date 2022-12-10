@@ -19,3 +19,18 @@
     color: var(--color-text-primary);
   }
 }
+
+.margin-20-vertical {
+  margin: 20px 0;
+}
+
+.max-width-800 {
+  max-width: 800px;
+}
+
+.hover-text-primary {
+  transition: var(--transition-normal);
+  &:hover {
+    color: var(--color-text-primary);
+  }
+}

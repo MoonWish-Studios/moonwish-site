@@ -5,46 +5,56 @@
 @use "./components/navbar";
 @use "./components/footer";
 @use "./components/buttons";
+@use "./components/textbox";
+@use "./components/typewriter";
+@use "./components/bigHeader";
 
 @use "./pages/services";
 @use "./pages/error404";
 @use "./pages/faq";
+@use "./pages/contact";
 
 html,
 body {
-    background-color: black;
-    color: var(--color-text-primary);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
 }
 
-:root {
-    --color-primary: rgba(255, 255, 255, 0.69);
-    --color-secondary: rgb(184, 174, 163);
-    --color-teritery: rgba(14, 14, 14, 0.61);
-    --color-fourth: #212121;
-}
-.test {
-    color: white;
-    font-size: var(--text-xl);
-}
-.test2 {
-    color: white;
-    font-size: var(--text-md);
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  // -webkit-box-shadow: 0 0 0 30px #000000 inset !important;
+  -webkit-text-fill-color: var(--color-text-primary) !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  transition: var(--transition-fast);
 }
-.container {
-    color: white;
+
+label {
+  color: var(--color-text-primary);
+  display: block;
+  font-size: var(--font-labels);
+  padding-left: 2px;
+}
+h1 {
+  font-size: var(--font-large);
+  font-weight: 800;
+  width: 100%;
+  margin: 10px 0;
+  line-height: 115%;
     margin: 7em 0 8em 7em;
 }
 
 .main {
-    min-height: 60vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 0;
-    font-size: 1em;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 5em;
+  font-size: 1em;
 }
 
 .typewriter {
@@ -97,4 +107,6 @@ body {
 .title a {
     color: #0070f3;
     text-decoration: none;
+.color-text-third {
+  color: var(--color-text-third);
 }

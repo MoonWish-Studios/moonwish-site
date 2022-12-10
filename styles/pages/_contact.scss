@@ -1,0 +1,35 @@
+.contact-section {
+  min-height: 100vh;
+  padding: 0 10vw;
+  padding-top: 5%;
+  padding-bottom: 20vh;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 12px;
+  margin-top: 50px;
+  width: max-content;
+
+  transition: 0.1s all linear;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.lottie-container {
+  width: 35vw;
+  height: 35vw;
+  position: relative;
+}
+
+.grid-span-col {
+  grid-column: 1 / span 2;
+
+  @media (max-width: 600px) {
+    grid-column: span 1;
+  }
+}

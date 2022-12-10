@@ -21,3 +21,24 @@
         border-color: var(--color-border-purple);
     }
 }
+
+.colorful-button {
+    background-image: var(--color-gradient-purple);
+    border-radius: var(--border-radius);
+    padding: var(--padding-button);
+    color: var(--color-text-white);
+    font-family: var(--josefin-sans);
+    background-size: 200% auto;
+    font-size: var(--font-labels);
+    font-weight: 800;
+
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border: none;
+    transition: var(--transition-slow);
+
+    &:hover {
+        background-position: right top;
+    }
+}
