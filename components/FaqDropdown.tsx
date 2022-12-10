@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
