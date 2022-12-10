@@ -1,44 +1,44 @@
 .button {
-    background-color: #000000;
-    border-width: 1px;
-    border-color: var(--color-text-primary);
-    border-style: solid;
-    padding: none;
-    width: 10em;
-    height: 3.3em;
-    color: var(--color-text-primary);
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #000000;
+  border-width: 1px;
+  border-color: var(--color-text-primary);
+  border-style: solid;
+  padding: none;
+  width: 10em;
+  height: 3.3em;
+  color: var(--color-text-primary);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &:hover {
-        transition: 0.1s ease-in-out;
-        transform: translateY(-2.5px);
-        color: var(--color-border-purple);
-        border-color: var(--color-border-purple);
-    }
+  &:hover {
+    transition: 0.1s ease-in-out;
+    transform: translateY(-2.5px);
+    color: var(--color-border-purple);
+    border-color: var(--color-border-purple);
+  }
 }
 
 .colorful-button {
-    background-image: var(--color-gradient-purple);
-    border-radius: var(--border-radius);
-    padding: var(--padding-button);
-    color: var(--color-text-white);
-    font-family: var(--josefin-sans);
-    background-size: 200% auto;
-    font-size: var(--font-labels);
-    font-weight: 800;
+  background-image: var(--color-gradient-purple);
+  border-radius: var(--border-radius);
+  padding: var(--padding-button);
+  color: var(--color-text-white);
+  font-family: var(--josefin-sans);
+  background-size: 200% auto;
+  font-size: var(--font-labels);
+  font-weight: 800;
 
-    cursor: pointer;
-    text-align: center;
-    outline: none;
-    border: none;
-    transition: var(--transition-slow);
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  border: none;
+  transition: var(--transition-slow);
 
-    &:hover {
-        background-position: right top;
-    }
+  &:hover {
+    background-position: right top;
+  }
 }
