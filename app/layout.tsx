@@ -1,5 +1,5 @@
 import Footer from "./(components)/Footer";
-import Navbar from "./(components)/Navbar";
+import MainNavigation from "./(components)/MainNavigation";
 import "../styles/globals.scss";
 
 import { Josefin_Sans } from "@next/font/google";

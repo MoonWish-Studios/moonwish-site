@@ -1,5 +1,5 @@
 "use client";
-import FaqDropdown from "../../components/FaqDropdown";
+import FaqDropdown from "../(components)/FaqDropdown";
 
 export default function Faq() {
     return (
