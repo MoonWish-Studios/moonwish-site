@@ -11,7 +11,7 @@ export default function Contact() {
       />
       <div>
         <ContactDetails />
-        <LottieAstronaut size={350} />
+        <LottieAstronaut />
       </div>
 
       {/* <BigHeader heading="Our Details" caption="Yep, our email address has three o’s!" />

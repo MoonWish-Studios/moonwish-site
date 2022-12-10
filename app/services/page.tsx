@@ -1,5 +1,5 @@
 "use client";
-import ServiceCard from "../../components/ServiceCard";
+import ServiceCard from "../(components)/ServiceCard";
 
 export default function Services() {
     return (
