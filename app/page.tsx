@@ -1,8 +1,7 @@
 "use client";
-import TypewriterC from "../components/TypewriterC";
-import Navbar from "../components/Navbar";
-import Button from "../components/Button/Button";
-import { Player } from "@lottiefiles/react-lottie-player";
+import TypewriterC from "./(components)/TypewriterC";
+import Navbar from "./(components)/Navbar";
+import Button from "./(components)/Button/Button";
 // imagine each folder as a page
 // a page has the HTML, head.tsx is the <head> part of the HTML. We can add keywords, icons here to improve SEO for this specific page
 // in layout.tsx - we have the body of the html, the {children} = this page.tsx file.
