@@ -4,7 +4,7 @@
 
 .textbox-reg {
   all: initial;
-  border: 1.7px double var(--color-text-third);
+  border: 1.5px solid var(--color-text-third);
   border-radius: var(--border-radius);
   padding: 6px 15px 4px 15px;
   width: 225px;
@@ -24,7 +24,7 @@
     border-color: var(--color-border-purple);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 960px) {
     width: 100%;
   }
 }

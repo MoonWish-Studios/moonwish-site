@@ -7,22 +7,16 @@ export default function Contact() {
       <BigHeader
         className="max-width-800"
         heading="Tell Us About Everything You Need"
-        caption="And We Will Take You To The Moon"
+        caption="And We Will Take You To The Moon :)"
       />
-      <div>
+      <div className="contact-wrapper">
         <ContactDetails />
         <LottieAstronaut size={350} />
       </div>
 
-      {/* <BigHeader heading="Our Details" caption="Yep, our email address has three o’s!" />
-      <BigHeader
-        className="margin-20-vertical color-text-third hover-text-primary"
-        heading="mooonwishstudios@gmail.com"
-      />
-      <BigHeader
-        className="margin-20-vertical color-text-third hover-text-primary"
-        heading="US +1 (714) 752 0110"
-      /> */}
+      <BigHeader heading="Our Details" caption="Yep, our email address has three o’s!" />
+      <h2>mooonwishstudios@gmail.com</h2>
+      <h2>US +1 (714) 752 0110</h2>
     </div>
   );
 }
