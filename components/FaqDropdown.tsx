@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
 export default function FaqDropdown({
@@ -10,7 +12,19 @@ export default function FaqDropdown({
     contents: string;
 }) {
     const [isOpen, setIsOpen] = React.useState(false);
-    const dropButton = document.getElementById("dropButton");
+
+    const openChevron = (
+        <IconContext.Provider value={{ color: "#8443d9" }}>
+            <FaChevronDown size="15px" />
+        </IconContext.Provider>
+    );
+
+    const closeChevron = (
+        <IconContext.Provider value={{ color: "#8443d9" }}>
+            <FaChevronUp size="15px" />
+        </IconContext.Provider>
+    );
+
     return (
         <div className="dropdownCard">
             <button
@@ -18,9 +32,7 @@ export default function FaqDropdown({
                 onClick={() => setIsOpen(!isOpen)}
                 className={isOpen ? "dropdownButtonOpen" : "dropdownButton"}
             >
-                <IconContext.Provider value={{ color: "#8443d9" }}>
-                    <FaChevronDown size="15px" />
-                </IconContext.Provider>
+                {isOpen ? closeChevron : openChevron}
                 <p className="faqTitle">{title}</p>
             </button>
             {isOpen && (
