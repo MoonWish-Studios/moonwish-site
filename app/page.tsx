@@ -13,20 +13,20 @@ import Button from "./(components)/Button/Button";
 // head.tsx + layout.tsx are optional files. PAGE.tsx is mandatory as it act as the page
 
 export default function Home() {
-    return (
-        <div className={`container`}>
-            <main className="main">
-                <TypewriterC />
-                <Button></Button>
-            </main>
-        </div>
-    );
-    // return (
-    //   <div className="container">
-    //     <main className="main">
-    //       {/* <TypewriterC /> */}
-    //       {/* <Button></Button> */}
-    //     </main>
-    //   </div>
-    // );
+  return (
+    <div className={`container`}>
+      <main className="main">
+        {/* <TypewriterC /> */}
+        {/* <Button></Button> */}
+      </main>
+    </div>
+  );
+  // return (
+  //   <div className="container">
+  //     <main className="main">
+  //       {/* <TypewriterC /> */}
+  //       {/* <Button></Button> */}
+  //     </main>
+  //   </div>
+  // );
 }
