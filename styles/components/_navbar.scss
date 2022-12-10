@@ -66,6 +66,51 @@ ul {
     width: 100%;
     transition: 0.3s;
 }
+
+.mobileNav {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+    .mobileNav {
+        display: flex;
+        align-items: center;
+        height: 7vh;
+        background: var(--color-gradient-purple);
+    }
+    .mobileLogo {
+        margin-left: 2em;
+    }
+    .mobileNav .hamburgerIcon {
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+    }
+    .navItems li a {
+        color: rgb(230, 230, 230);
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .navItems li a:hover {
+        color: white;
+    }
+
+    .navItems {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 6vh;
+        right: 0;
+        width: 100%;
+        background: var(--color-gradient-purple);
+        padding-left: 10%;
+        line-height: 30px;
+        padding-bottom: 1em;
+    }
+}
 // .logoImg {
 //     height: auto;
 // }

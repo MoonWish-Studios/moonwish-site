@@ -1,12 +1,12 @@
 .button {
     background-color: #000000;
     border-width: 1px;
-    border-color: white;
+    border-color: var(--color-text-primary);
     border-style: solid;
     padding: none;
     width: 10em;
     height: 3.3em;
-    color: white;
+    color: var(--color-text-primary);
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -17,5 +17,7 @@
     &:hover {
         transition: 0.1s ease-in-out;
         transform: translateY(-2.5px);
+        color: var(--color-border-purple);
+        border-color: var(--color-border-purple);
     }
 }

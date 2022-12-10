@@ -16,6 +16,7 @@
     "@types/react-dom": "18.0.9",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.6",
+    "framer-motion": "^7.6.19",
     "lottie-react": "^2.3.1",
     "lottie-web": "^5.10.0",
     "nanoid": "^4.0.0",
