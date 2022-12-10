@@ -5,8 +5,9 @@
 @use "./components/navbar";
 @use "./components/footer";
 @use "./components/buttons";
-@use "./components/inputBox";
+@use "./components/textbox";
 @use "./components/typewriter";
+@use "./components/bigHeader";
 
 @use "./pages/services";
 @use "./pages/error404";
@@ -14,7 +15,7 @@
 
 html,
 body {
-  background-color: black;
+  background-color: var(--color-background);
   color: var(--color-text-primary);
 }
 
@@ -29,12 +30,21 @@ input:-webkit-autofill:active {
 
 * {
   box-sizing: border-box;
+  transition: var(--transition-fast);
 }
 
 label {
   color: var(--color-text-primary);
   display: block;
-  font-size: 0.75rem;
+  font-size: var(--font-labels);
+  padding-left: 2px;
+}
+h1 {
+  font-size: var(--font-large);
+  font-weight: 800;
+  width: 100%;
+  margin: 10px 0;
+  line-height: 115%;
 }
 
 .main {
@@ -43,4 +53,8 @@ label {
   grid-template-rows: 1fr 1fr;
   margin-left: 5em;
   font-size: 1em;
+}
+
+.color-text-third {
+  color: var(--color-text-third);
 }

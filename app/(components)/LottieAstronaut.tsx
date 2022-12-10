@@ -7,7 +7,7 @@ export default function LottieAstronaut({ size }: { size: number }) {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <>
+    <div className="lottie-container">
       <Lottie
         className="lottie-player"
         animationData={spaceman}
@@ -15,20 +15,21 @@ export default function LottieAstronaut({ size }: { size: number }) {
           setLoaded(true);
         }}
         style={{
-          width: size,
-          height: size,
+          width: "100%",
+          height: "100%",
         }}
       />
       {loaded === false && (
-        <Image
-          className="lottie-player"
-          priority={true}
-          alt="Spaceman"
-          src="/assets/graphics/spaceman.png"
-          width={size}
-          height={size}
-        />
+        <div className="lottie-player">
+          <Image
+            priority={true}
+            alt="Spaceman"
+            src="/assets/graphics/spaceman.png"
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </div>
       )}
-    </>
+    </div>
   );
 }

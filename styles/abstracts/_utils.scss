@@ -10,11 +10,6 @@
   align-items: center;
 }
 
-.flex-x-center {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .next-link {
   text-decoration: none;
   color: var(--color-text-secondary);
@@ -25,6 +20,17 @@
   }
 }
 
-.grid-span-col {
-  grid-column: 1 / span 2;
+.margin-20-vertical {
+  margin: 20px 0;
+}
+
+.max-width-800 {
+  max-width: 800px;
+}
+
+.hover-text-primary {
+  transition: var(--transition-normal);
+  &:hover {
+    color: var(--color-text-primary);
+  }
 }
