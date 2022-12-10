@@ -45,7 +45,7 @@ h1 {
   width: 100%;
   margin: 10px 0;
   line-height: 115%;
-    margin: 7em 0 8em 7em;
+  margin: 7em 0 8em 7em;
 }
 h2 {
   font-weight: 800;
@@ -67,36 +67,36 @@ h2 {
 }
 
 .typewriter {
-    grid-row: 0 / 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    font-size: 4em;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+  grid-row: 0 / 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  font-size: 4em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .typewriter1 {
-    grid-row: 0 / 1;
-    display: flex;
-    align-items: flex-end;
+  grid-row: 0 / 1;
+  display: flex;
+  align-items: flex-end;
 }
 .typewriter2 {
-    grid-row: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .learnButton {
-    width: 20px;
-    height: 16px;
-    grid-column: 0 / 1;
-    grid-row: 2 / 3;
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    border-color: white;
-    border-width: 1px;
-    cursor: pointer;
-    border-style: solid;
-    border-radius: 100px;
+  width: 20px;
+  height: 16px;
+  grid-column: 0 / 1;
+  grid-row: 2 / 3;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border-color: white;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 100px;
 }
 // border-radius: 4px;
 //     background: #256ce1;
@@ -109,13 +109,6 @@ h2 {
 //     text-decoration: none;
 
 .learnButton:hover {
-    background-color: rgb(184, 174, 163);
-    transition: 0.5s;
-}
-
-.title a {
-    color: #0070f3;
-    text-decoration: none;
-.color-text-third {
-  color: var(--color-text-third);
+  background-color: rgb(184, 174, 163);
+  transition: 0.5s;
 }
