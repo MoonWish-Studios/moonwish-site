@@ -9,6 +9,7 @@ type List = { id: string; heading: string; description: string };
 import { animated, useSpring } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 export default function WhyUs() {
   return (
     <div className="whyus-section">
@@ -18,6 +19,17 @@ export default function WhyUs() {
             <em className="weak">OUR PERSONAL MISSION STATEMENT IS TO</em>{" "}
             <em className="strong">MAKE A POSITIVE IMPACT FOR BUSINESSES IN OUR COMMUNITY</em>
           </h1>
+          <div className="moon">
+            <Image
+              className="moon"
+              style={{ objectFit: "cover", boxShadow: "0 30px 40px rgba(0, 0, 0, 0.1)" }}
+              src="/assets/moon.png"
+              // width={750}
+              fill
+              // height={750}
+              alt="moon"
+            />
+          </div>
         </div>
       </Statement>
       <Statement>

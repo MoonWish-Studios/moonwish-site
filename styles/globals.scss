@@ -125,7 +125,7 @@ h2 {
   padding: 0 8vw;
   margin-bottom: 20vh;
   width: 100%;
-
+  overflow-y: hidden;
   .next-link {
     text-decoration: underline;
     font-weight: 800;
@@ -153,11 +153,19 @@ h2 {
   margin: 30vh 0;
   height: 80vh;
   display: flex;
+  width: 100%;
   align-items: center;
 
+  position: relative;
   h1 {
     max-width: 80vw;
     color: var(--color-text-fourth);
+  }
+
+  @media (min-width: 1300px) {
+    h1 {
+      padding-right: 150px;
+    }
   }
 }
 .list-container {
@@ -236,4 +244,23 @@ h3 {
   font-size: var(--font-regular);
   color: var(--color-text-third);
   font-weight: 400;
+}
+
+.moon {
+  z-index: -1;
+  // width: 500px;
+  position: absolute;
+  right: -20%;
+  top: 60%;
+  width: 40vw;
+  height: 40vw;
+
+  @media (max-width: 1000px) {
+    width: 60vw;
+    height: 60vw;
+    top: 80%;
+  }
+
+  // width: 500px;
+  // height: 500px;
 }
