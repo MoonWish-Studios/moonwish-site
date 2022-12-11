@@ -124,6 +124,8 @@ h2 {
 .whyus-section {
   padding: 0 8vw;
   margin-bottom: 20vh;
+  width: 100%;
+
   .next-link {
     text-decoration: underline;
     font-weight: 800;
@@ -132,10 +134,31 @@ h2 {
   .caption {
     text-align: center;
   }
+
+  .weak {
+    color: var(--color-text-fourth);
+  }
+  .strong {
+    background: -webkit-linear-gradient(right, #6f2cff -8.52%, #974afa 43.96%, #4b70f3 108.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .green {
+    color: rgb(44, 178, 44);
+  }
 }
 
 .statement-block {
-  height: 100vh;
+  margin: 30vh 0;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    max-width: 80vw;
+    color: var(--color-text-fourth);
+  }
 }
 .list-container {
   margin-top: 3vh;

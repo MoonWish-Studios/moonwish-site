@@ -6,6 +6,7 @@
   --color-text-navlink: #a1a1a1;
   --color-text-secondary: #5c5c5c;
   --color-text-third: #212121;
+  --color-text-fourth: #363636;
 
   --color-gradient-purple: linear-gradient(
     90.05deg,
@@ -19,7 +20,7 @@
   --color-border-purple: #9847ff;
 
   --color-background-secondary: #0e0e0e;
-  --color-background: #060606;
+  --color-background: #0c0c0c;
 
   --big-padding: 40px;
   --med-padding: 20px;
@@ -52,6 +53,9 @@
     --font-list: 1.2rem;
   }
 
+  @media (max-width: 430px) {
+    --font-large: 2.6rem;
+  }
   @media (max-width: 360px) {
     --font-big: 1rem;
     --font-large: 2.3rem;

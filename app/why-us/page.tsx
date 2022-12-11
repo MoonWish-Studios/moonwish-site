@@ -2,22 +2,70 @@
 
 import { nanoid } from "nanoid";
 import Link from "next/link";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 type List = { id: string; heading: string; description: string };
 
+import { animated, useSpring } from "@react-spring/web";
+import { useInView } from "react-intersection-observer";
+import { useEffect, useRef } from "react";
 export default function WhyUs() {
   return (
     <div className="whyus-section">
-      <h1 className="statement-block">
-        OUR PERSONAL MISSION STATEMENT IS TO MAKE A POSITIVE IMPACT FOR BUSINESSES IN OUR COMMUNITY
-      </h1>
-      <h1 className="statement-block">
-        THAT IS WHY{"\n"}
-        WE LOVE TO COLLABORATE WITH POSITIVE BUSINESSES THAT WANT TO PROVIDE THE BEST SERVICE FOR
-        THEIR CUSTOMERS
-      </h1>
+      <Statement>
+        <div>
+          <h1>
+            <em className="weak">OUR PERSONAL MISSION STATEMENT IS TO</em>{" "}
+            <em className="strong">MAKE A POSITIVE IMPACT FOR BUSINESSES IN OUR COMMUNITY</em>
+          </h1>
+        </div>
+      </Statement>
+      <Statement>
+        <h1>
+          THAT IS WHY WE LOVE TO COLLABORATE WITH <em className="green">POSITIVE BUSINESSES</em>{" "}
+          THAT WANT TO PROVIDE THE BEST SERVICE FOR THEIR CUSTOMERS
+        </h1>
+      </Statement>
 
-      <h1>So Why Us?</h1>
+      <Statement>
+        <h1>
+          WHETHER YOU ARE JUST STARTING OUT, WANT A REDESIGN OF AN EXISTING WEBSITE, OR IMPROVE YOUR
+          GOOGLE RANKING, <em className="strong">WE CAN HELP</em>
+        </h1>
+      </Statement>
+      <WhyList />
+    </div>
+  );
+}
+
+function WhyList() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+
+  const props = useSpring({
+    to: {
+      opacity: 1,
+      x: 10,
+      // y: 0,
+    },
+    from: {
+      opacity: 0,
+      x: 0,
+    },
+    config: {
+      frequency: 1,
+      damping: 2,
+      tension: 280,
+    },
+    // delay: 00,
+    pause: !inView,
+  });
+  return (
+    <>
+      <animated.h1 ref={ref} style={props}>
+        So Why Us?
+      </animated.h1>
       <div className="list-container">
         {whyLists.map(({ id, heading, description }: List, index: number) => (
           <ListItem key={id} index={index + 1} heading={heading} description={description} />
@@ -30,15 +78,38 @@ export default function WhyUs() {
         </Link>{" "}
         page
       </p>
-    </div>
+    </>
   );
 }
 
-function Statement({ children }: { children: string }) {
+function Statement({ children }: { children: JSX.Element }) {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+
+  const props = useSpring({
+    to: {
+      opacity: 1,
+      // x: 10,
+      y: -30,
+    },
+    from: {
+      opacity: 0,
+      x: 0,
+      y: 0,
+    },
+    config: {
+      frequency: 1,
+      damping: 2,
+      tension: 180,
+    },
+    // delay: 00,
+    pause: !inView,
+  });
   return (
-    <div className="statement-block">
-      <h1>{children}</h1>
-    </div>
+    <animated.div ref={ref} className="statement-block">
+      <animated.div style={props}>{children}</animated.div>
+    </animated.div>
   );
 }
 function ListItem({
@@ -50,12 +121,36 @@ function ListItem({
   description: string;
   index: number;
 }) {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+
+  const props = useSpring({
+    to: {
+      opacity: 1,
+      x: 0,
+      // y: -30,
+    },
+    from: {
+      opacity: 0,
+      x: -10,
+      y: 0,
+    },
+    config: {
+      frequency: 1,
+      damping: 2,
+      tension: 180,
+    },
+    delay: 500,
+    pause: !inView,
+  });
+
   return (
-    <div className="list-item">
+    <animated.div ref={ref} style={props} className="list-item">
       <p className="list-number">{index}/</p>
       <h3>{heading}</h3>
       <p className="list-description">{description}</p>
-    </div>
+    </animated.div>
   );
 }
 
