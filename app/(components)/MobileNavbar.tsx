@@ -1,13 +1,34 @@
 "use client";
-import Image from "next/image";
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseOutline } from "react-icons/io5";
 
-export default function Navbar() {
+import { useState } from "react";
+
+export default function MobileNavbar() {
+    const [open, setOpen] = useState(false);
+
+    const hamburgerIcon = (
+        <RxHamburgerMenu
+            className="hamburgerIcon"
+            size="40px"
+            color="white"
+            onClick={() => setOpen(!open)}
+        />
+    );
+    const closeIcon = (
+        <IoCloseOutline
+            className="hamburgerIcon"
+            size="40px"
+            color="white"
+            onClick={() => setOpen(!open)}
+        />
+    );
+
     return (
-        <div className="nav">
+        <div className="mobileNav">
             <div>
-                <a href="/" className="logo">
+                <a href="/" className="mobileLogo">
                     <img
                         src={"/assets/logo.svg"}
                         style={{ width: 100, height: "auto" }}
@@ -16,21 +37,14 @@ export default function Navbar() {
                     />
                 </a>
             </div>
-
-            <div className="nav-links" id="navLinks">
-                <ul>
+            {open ? closeIcon : hamburgerIcon}
+            {open && (
+                <ul className="navItems">
                     <CustomLink href="/">Why Us</CustomLink>
                     <CustomLink href="/services">Services</CustomLink>
                     <CustomLink href="/faq">FAQ</CustomLink>
                 </ul>
-            </div>
-            <div className="contact">
-                <ul>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            )}
         </div>
     );
 }
