@@ -120,3 +120,97 @@ h2 {
     color: var(--color-text-third);
   }
 }
+
+.whyus-section {
+  padding: 0 8vw;
+  margin-bottom: 20vh;
+  .next-link {
+    text-decoration: underline;
+    font-weight: 800;
+  }
+
+  .caption {
+    text-align: center;
+  }
+}
+
+.statement-block {
+  height: 100vh;
+}
+.list-container {
+  margin-top: 3vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  // margin: 0 auto;
+}
+// why us page
+h3 {
+  font-size: var(--font-list);
+  color: var(--color-text-primary);
+  line-height: 120%;
+}
+.list-item {
+  border-top: 1px solid var(--color-border-secondary);
+  padding: 60px 40px;
+  min-height: 28vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+
+  h3 {
+    max-width: 450px;
+    word-wrap: break-word;
+  }
+
+  .list-description {
+    max-width: 300px;
+    color: var(--color-text-secondary);
+    line-height: 110%;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid var(--color-border-secondary);
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 60px 40px;
+
+    h3 {
+      max-width: initial;
+    }
+    .list-description {
+      max-width: initial;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 7vh 5vw;
+    gap: 15px;
+
+    .list-number {
+      top: 8%;
+      left: 0%;
+    }
+  }
+}
+
+.list-number {
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  font-size: var(--font-regular);
+  color: var(--color-text-third);
+  font-weight: 400;
+}
