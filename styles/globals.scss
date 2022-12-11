@@ -245,22 +245,3 @@ h3 {
   color: var(--color-text-third);
   font-weight: 400;
 }
-
-.moon {
-  z-index: -1;
-  // width: 500px;
-  position: absolute;
-  right: -20%;
-  top: 60%;
-  width: 40vw;
-  height: 40vw;
-
-  @media (max-width: 1000px) {
-    width: 60vw;
-    height: 60vw;
-    top: 80%;
-  }
-
-  // width: 500px;
-  // height: 500px;
-}

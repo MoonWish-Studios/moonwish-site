@@ -19,17 +19,6 @@ export default function WhyUs() {
             <em className="weak">OUR PERSONAL MISSION STATEMENT IS TO</em>{" "}
             <em className="strong">MAKE A POSITIVE IMPACT FOR BUSINESSES IN OUR COMMUNITY</em>
           </h1>
-          <div className="moon">
-            <Image
-              className="moon"
-              style={{ objectFit: "cover", boxShadow: "0 30px 40px rgba(0, 0, 0, 0.1)" }}
-              src="/assets/moon.png"
-              // width={750}
-              fill
-              // height={750}
-              alt="moon"
-            />
-          </div>
         </div>
       </Statement>
       <Statement>
@@ -83,7 +72,7 @@ function WhyList() {
           <ListItem key={id} index={index + 1} heading={heading} description={description} />
         ))}
       </div>
-      <p className="caption">
+      <p ref={ref} className="caption">
         For more details, check out our{" "}
         <Link className="next-link" href="/services">
           Services
