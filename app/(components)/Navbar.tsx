@@ -19,16 +19,14 @@ export default function Navbar() {
 
             <div className="nav-links" id="navLinks">
                 <ul>
-                    <CustomLink href="/">Why Us</CustomLink>
+                    <CustomLink href="/why-us">Why Us</CustomLink>
                     <CustomLink href="/services">Services</CustomLink>
                     <CustomLink href="/faq">FAQ</CustomLink>
                 </ul>
             </div>
-            <div className="contact">
+            <div className="contact nav-links">
                 <ul>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
+                    <CustomLink href="/contact">Contact</CustomLink>
                 </ul>
             </div>
         </div>
