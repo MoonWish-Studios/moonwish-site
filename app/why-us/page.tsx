@@ -142,7 +142,7 @@ function ListItem({
       damping: 2,
       tension: 180,
     },
-    delay: 500,
+    delay: 100,
     pause: !inView,
   });
 
