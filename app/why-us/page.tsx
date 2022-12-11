@@ -72,7 +72,7 @@ function WhyList() {
           <ListItem key={id} index={index + 1} heading={heading} description={description} />
         ))}
       </div>
-      <p ref={ref} className="caption">
+      <p className="caption">
         For more details, check out our{" "}
         <Link className="next-link" href="/services">
           Services
