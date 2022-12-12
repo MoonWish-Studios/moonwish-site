@@ -22,18 +22,24 @@ export default function Footer() {
           <FooterInfo alt="phone " src="/assets/icons/phone.svg">
             +1 (714) 330 9387
           </FooterInfo>
-          <FooterInfo alt="email" src="/assets/icons/home.svg">
-            Cypress, Orange County, USA
+          <FooterInfo alt="home" src="/assets/icons/home.svg">
+            Cypress, CA, USA
+          </FooterInfo>
+          <FooterInfo alt="home" src="/assets/icons/home.svg">
+            Irvine, CA, USA
           </FooterInfo>
         </div>
         <div className="footer-group">
           <h4>Company</h4>
+          <Link className="next-link" href="/">
+            Home
+          </Link>
           <Link className="next-link" href="/why-us">
             Why Us
           </Link>
-          <Link className="next-link" href="/our-works">
+          {/* <Link className="next-link" href="/our-works">
             Our Works
-          </Link>
+          </Link> */}
           <Link className="next-link" href="/services">
             Services
           </Link>
@@ -41,7 +47,7 @@ export default function Footer() {
             Contact
           </Link>
         </div>
-        <div className="footer-group">
+        {/* <div className="footer-group">
           <h4>Legal</h4>
           <Link className="next-link" href="/privacy">
             Privacy
@@ -49,7 +55,7 @@ export default function Footer() {
           <Link className="next-link" href="/Terms">
             Terms
           </Link>
-        </div>
+        </div> */}
       </div>
 
       <div className="footer-copyright">© 2022 Moonwish Studios | All rights reserved</div>
