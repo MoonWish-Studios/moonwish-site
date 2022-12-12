@@ -4,15 +4,16 @@
 
 @use "./components/navbar";
 @use "./components/footer";
+@use "./components/typewriter";
 @use "./components/buttons";
 @use "./components/textbox";
-@use "./components/typewriter";
 @use "./components/bigHeader";
 
 @use "./pages/services";
 @use "./pages/error404";
 @use "./pages/faq";
 @use "./pages/contact";
+@use "./pages/whyus";
 
 html,
 body {
@@ -57,6 +58,11 @@ h2 {
     color: var(--color-text-primary);
   }
 }
+h3 {
+  font-size: var(--font-list);
+  color: var(--color-text-primary);
+  line-height: 120%;
+}
 
 .main {
   min-height: 100vh;
@@ -66,182 +72,4 @@ h2 {
   font-size: 1em;
 }
 
-.typewriter {
-  grid-row: 0 / 1;
-  display: grid;
-  grid-template-rows: 1fr 0.3fr;
-  font-size: 4em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-.typewriter1 {
-  grid-row: 0 / 1;
-  display: flex;
-  align-items: flex-end;
-}
-.typewriter2 {
-  grid-row: 2 / 3;
-}
-
-.learnButton {
-  width: 20px;
-  height: 16px;
-  grid-column: 0 / 1;
-  grid-row: 2 / 3;
-  background-color: black;
-  color: white;
-  font-size: 18px;
-  border-color: white;
-  border-width: 1px;
-  cursor: pointer;
-  border-style: solid;
-  border-radius: 100px;
-}
-// border-radius: 4px;
-//     background: #256ce1;
-//     padding: 10px 22px;
-//     color: #fff;
-//     border: none;
-//     outline: none;
-//     cursor: pointer;
-//     transition: all 0.2s ease-in-out;
-//     text-decoration: none;
-
-.learnButton:hover {
-  background-color: rgb(184, 174, 163);
-  transition: 0.5s;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-  .color-text-third {
-    color: var(--color-text-third);
-  }
-}
-
-.whyus-section {
-  padding: 0 8vw;
-  margin-bottom: 20vh;
-  width: 100%;
-  overflow-y: hidden;
-  .next-link {
-    text-decoration: underline;
-    font-weight: 800;
-  }
-
-  .caption {
-    text-align: center;
-  }
-
-  .weak {
-    color: var(--color-text-fourth);
-  }
-  .strong {
-    background: -webkit-linear-gradient(right, #6f2cff -8.52%, #974afa 43.96%, #4b70f3 108.66%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .green {
-    color: rgb(44, 178, 44);
-  }
-}
-
-.statement-block {
-  margin: 30vh 0;
-  height: 80vh;
-  display: flex;
-  width: 100%;
-  align-items: center;
-
-  position: relative;
-  h1 {
-    max-width: 80vw;
-    color: var(--color-text-fourth);
-  }
-
-  @media (min-width: 1300px) {
-    h1 {
-      padding-right: 150px;
-    }
-  }
-}
-.list-container {
-  margin-top: 3vh;
-  margin-bottom: 10vh;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  // margin: 0 auto;
-}
-// why us page
-h3 {
-  font-size: var(--font-list);
-  color: var(--color-text-primary);
-  line-height: 120%;
-}
-.list-item {
-  border-top: 1px solid var(--color-border-secondary);
-  padding: 60px 40px;
-  min-height: 28vh;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 50px;
-
-  h3 {
-    max-width: 450px;
-    word-wrap: break-word;
-  }
-
-  .list-description {
-    max-width: 300px;
-    color: var(--color-text-secondary);
-    line-height: 110%;
-  }
-
-  &:last-child {
-    border-bottom: 1px solid var(--color-border-secondary);
-  }
-
-  @media (max-width: 1000px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 60px 40px;
-
-    h3 {
-      max-width: initial;
-    }
-    .list-description {
-      max-width: initial;
-    }
-  }
-
-  @media (max-width: 600px) {
-    padding: 7vh 5vw;
-    gap: 15px;
-
-    .list-number {
-      top: 8%;
-      left: 0%;
-    }
-  }
-}
-
-.list-number {
-  position: absolute;
-  top: 20%;
-  left: 0px;
-  font-size: var(--font-regular);
-  color: var(--color-text-third);
-  font-weight: 400;
-}
+// moved typewriter to typerwriter.scss

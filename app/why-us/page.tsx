@@ -62,6 +62,7 @@ function WhyList() {
     // delay: 00,
     pause: !inView,
   });
+
   return (
     <>
       <animated.h1 ref={ref} style={props}>
@@ -104,7 +105,7 @@ function Statement({ children }: { children: JSX.Element }) {
       damping: 2,
       tension: 180,
     },
-    // delay: 00,
+    delay: 200,
     pause: !inView,
   });
   return (
