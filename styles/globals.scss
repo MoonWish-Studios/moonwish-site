@@ -69,11 +69,24 @@ h3 {
 }
 
 .main {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  margin-left: 5em;
-  font-size: 1em;
+  user-select: none;
+  cursor: grab;
+}
+
+.container {
+  background-color: black;
+
+  canvas {
+    width: 100vw;
+    height: 200vh;
+    cursor: grab;
+  }
+}
+
+.canvas-link {
+  position: absolute;
+  top: 100vh;
+  width: 220px;
 }
 
 // moved typewriter to typerwriter.scss

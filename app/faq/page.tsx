@@ -1,9 +1,15 @@
 "use client";
+import { useSpring, animated } from "@react-spring/web";
 import FaqDropdown from "../(components)/FaqDropdown";
 
 export default function Faq() {
+  const props = useSpring({
+    to: {
+      opacity: 1,
+    },
+  });
   return (
-    <div className={`faqContainer`}>
+    <animated.div className={`faqContainer`} style={props}>
       <div className="headerFaq">FAQ</div>
       <div className="faqDescription">Here are the most frequently asked questions we receive</div>
       <FaqDropdown
@@ -30,6 +36,6 @@ export default function Faq() {
         title="Where is your business located?"
         contents="We have one location in Irvine, CA and one in Cypress, CA"
       ></FaqDropdown>
-    </div>
+    </animated.div>
   );
 }
