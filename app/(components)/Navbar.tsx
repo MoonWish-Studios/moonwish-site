@@ -25,14 +25,11 @@ export default function Navbar() {
           <CustomLink href="/faq">FAQ</CustomLink>
         </ul>
       </div>
-      <Link className="next-link" href="/contact">
-        Contact
-      </Link>
-      {/* <ul>
-          <li>
-            <a href="">Contact</a>
-          </li>
-        </ul> */}
+      <div className="contact nav-links">
+        <ul>
+          <CustomLink href="/contact">Contact</CustomLink>
+        </ul>
+      </div>
     </div>
   );
 }

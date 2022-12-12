@@ -48,19 +48,6 @@ ul {
   display: inline-block;
 }
 
-.contact ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #ffffff;
-  display: block;
-  margin: auto;
-}
-.contact ul li:hover::after {
-  width: 100%;
-  transition: 0.3s;
-}
-
 .mobileNav {
   display: none;
 }
@@ -73,7 +60,9 @@ ul {
     display: flex;
     align-items: center;
     height: 7vh;
-    background: var(--color-gradient-purple);
+    // background: var(--color-gradient-purple);
+    background: var(--color-background);
+    transition: var(--transition-fast);
   }
   .mobileLogo {
     margin-left: 2em;
@@ -86,7 +75,7 @@ ul {
   .navItems li a {
     color: rgb(230, 230, 230);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 3rem;
   }
   .navItems li a:hover {
     color: white;
@@ -95,14 +84,20 @@ ul {
   .navItems {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 6vh;
+    justify-content: center;
+
+    position: fixed;
+    // position: absolute;
+    // top: 6vh;
+    top: 0;
     right: 0;
     width: 100%;
-    background: var(--color-gradient-purple);
-    padding-left: 10%;
-    line-height: 30px;
+    height: 100vh;
+    background: var(--color-background);
+    padding: 10%;
+    line-height: 100px;
     padding-bottom: 1em;
+    transition: var(--transition-normal);
   }
 }
 // .logoImg {
