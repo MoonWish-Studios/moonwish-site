@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import CustomLink from "./CustomLink";
 export default function Navbar() {
   return (
     <div className="nav">
@@ -31,17 +32,5 @@ export default function Navbar() {
         </ul>
       </div>
     </div>
-  );
-}
-
-function CustomLink({ href, children }: { href: string; children: string }) {
-  // const path = window.location.pathname;
-
-  return (
-    <li>
-      <Link className="next-link" href={href}>
-        {children}
-      </Link>
-    </li>
   );
 }

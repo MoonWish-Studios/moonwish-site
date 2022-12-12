@@ -39,19 +39,19 @@ ul {
   position: relative;
 }
 
-.contact ul li a {
-  text-decoration: none;
-  color: #ffff;
-  font-size: 16px;
+.hamburgerIcon {
+  color: purple;
+  width: fit-content;
+  height: fit-content;
 }
-.contact ul li {
-  display: inline-block;
-}
-
 .mobileNav {
   display: none;
+  border-bottom: 1px solid var(--color-border-secondary);
 }
 
+.navItems {
+  display: none;
+}
 @media (max-width: 600px) {
   .nav {
     display: none;
@@ -60,44 +60,39 @@ ul {
     display: flex;
     align-items: center;
     height: 7vh;
+    padding: 10px 0;
     // background: var(--color-gradient-purple);
-    background: var(--color-background);
     transition: var(--transition-fast);
   }
   .mobileLogo {
     margin-left: 2em;
   }
-  .mobileNav .hamburgerIcon {
+
+  .hamburgerIcon {
     position: absolute;
     right: 5%;
     cursor: pointer;
   }
-  .navItems li a {
-    color: rgb(230, 230, 230);
-    text-decoration: none;
-    font-size: 3rem;
-  }
-  .navItems li a:hover {
-    color: white;
-  }
-
   .navItems {
     display: flex;
+    color: var(--color-text-navlink);
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 
-    position: fixed;
+    li {
+      padding: 15px 30px;
+      border-bottom: 1px solid var(--color-border-secondary);
+      font-size: var(--font-big);
+      width: 100vw;
+    }
     // position: absolute;
     // top: 6vh;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--color-background);
-    padding: 10%;
-    line-height: 100px;
-    padding-bottom: 1em;
     transition: var(--transition-normal);
+
+    .active {
+      margin: 5px 0;
+    }
   }
 }
 // .logoImg {
