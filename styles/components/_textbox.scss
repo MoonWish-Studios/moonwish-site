@@ -1,0 +1,38 @@
+.text-wrapper {
+  width: 100%;
+}
+
+.textbox-reg {
+  all: initial;
+  border: 1.5px solid var(--color-text-third);
+  border-radius: var(--border-radius);
+  padding: 6px 15px 4px 15px;
+  width: 225px;
+  height: 36px;
+  box-sizing: border-box;
+  margin: 7px 0;
+  color: var(--color-text-primary);
+  font-family: var(--josefin-sans);
+  font-weight: 400;
+  font-size: var(--font-regular);
+  transition: var(--transition-fast);
+
+  &:hover {
+    border-color: var(--color-border-primary);
+  }
+  &:focus {
+    border-color: var(--color-border-purple);
+  }
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+}
+
+.textbox-large {
+  @extend .textbox-reg;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 150px;
+  padding: 15px;
+}

@@ -10,23 +10,35 @@
   },
   "dependencies": {
     "@next/font": "^13.0.6",
+    "@react-spring/parallax": "^9.5.5",
+    "@react-spring/three": "^9.5.5",
+    "@react-spring/web": "^9.5.5",
+    "@react-three/drei": "^9.46.4",
+    "@react-three/fiber": "^8.9.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
+    "@types/three": "^0.146.0",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.6",
+    "framer-motion": "^7.6.19",
+    "lottie-react": "^2.3.1",
     "nanoid": "^4.0.0",
     "next": "13.0.6",
-    "react": "18.2.0",
+    "randomcolor": "^0.6.2",
+    "react": "^18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "react-intersection-observer": "^9.4.1",
     "react-router-dom": "^6.4.4",
+    "server-only": "^0.0.1",
     "styled-components": "^5.3.6",
+    "three": "^0.147.0",
     "typescript": "4.9.3",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26",
+    "@types/randomcolor": "^0.5.7",
     "sass": "^1.56.1"
   }
 }

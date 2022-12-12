@@ -1,102 +1,92 @@
-@use "./components/navbar.scss";
+@use "./abstracts/reset";
+@use "./abstracts/utils";
+@use "./abstracts/variables";
+
+@use "./components/navbar";
+@use "./components/footer";
+@use "./components/typewriter";
+@use "./components/buttons";
+@use "./components/textbox";
+@use "./components/caption";
+
+@use "./pages/services";
+@use "./pages/error404";
+@use "./pages/contact";
+@use "./pages/whyus";
+@use "./pages/faq";
+
 html,
 body {
-    padding: 0;
-    margin: 0;
-    background-color: black;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
 }
 
-:root {
-    --color-primary: white;
-    --color-secondary: rgb(184, 174, 163);
-    --color-teritery: blue;
-
-    // --text-s:
-    // --text-b:
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  // -webkit-box-shadow: 0 0 0 30px #000000 inset !important;
+  -webkit-text-fill-color: var(--color-text-primary) !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
-.dark-theme {
-    color: var;
+button {
+  font-family: var(--josefin-sans);
 }
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  transition: var(--transition-normal);
 }
-.container {
-    padding: 0 2rem;
-    color: white;
+
+label {
+  color: var(--color-text-primary);
+  display: block;
+  font-size: var(--font-labels);
+  padding-left: 2px;
+}
+h1 {
+  font-size: var(--font-large);
+  font-weight: 800;
+  width: 100%;
+  margin: 10px 0;
+  line-height: 115%;
+}
+h2 {
+  font-weight: 800;
+  color: var(--color-text-third);
+  font-size: var(--font-big);
+  margin: 20px 0;
+  width: fit-content;
+  &:hover {
+    color: var(--color-text-primary);
+  }
+}
+h3 {
+  font-size: var(--font-list);
+  color: var(--color-text-primary);
+  line-height: 120%;
 }
 
 .main {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 5em;
-    font-size: 1em;
+  user-select: none;
+  cursor: grab;
 }
 
-.typewriter {
-    grid-row: 0 / 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    font-size: 4em;
-    margin-top: 3em;
+.container {
+  background-color: black;
+
+  canvas {
+    width: 100vw;
+    height: 200vh;
+    cursor: grab;
+  }
 }
 
-.typewriter1 {
-    grid-row: 0 / 1;
-    display: flex;
-    align-items: flex-end;
-}
-.typewriter2 {
-    grid-row: 2 / 3;
+.canvas-link {
+  position: absolute;
+  top: 100vh;
+  width: 220px;
 }
 
-.learnButton {
-    width: 20px;
-    height: 16px;
-    grid-column: 0 / 1;
-    grid-row: 2 / 3;
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    border-color: white;
-    border-width: 1px;
-    cursor: pointer;
-    padding: 0;
-    border-style: solid;
-}
-// border-radius: 4px;
-//     background: #256ce1;
-//     padding: 10px 22px;
-//     color: #fff;
-//     border: none;
-//     outline: none;
-//     cursor: pointer;
-//     transition: all 0.2s ease-in-out;
-//     text-decoration: none;
-
-.learnButton:hover {
-    background-color: rgb(184, 174, 163);
-    transition: 0.5s;
-}
-
-.footer {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.title a {
-    color: #0070f3;
-    text-decoration: none;
-}
+// moved typewriter to typerwriter.scss

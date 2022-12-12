@@ -1,0 +1,17 @@
+.typewriter {
+  grid-row: 0 / 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  font-size: var(--font-big);
+  margin-top: 3em;
+  color: white;
+}
+
+.typewriter1 {
+  grid-row: 0 / 1;
+  display: flex;
+  align-items: flex-end;
+}
+.typewriter2 {
+  grid-row: 2 / 3;
+}
