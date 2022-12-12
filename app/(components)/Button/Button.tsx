@@ -2,9 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-function clickMe() {
-  console.log("Clicked");
-}
 
 export default function Button() {
   return (

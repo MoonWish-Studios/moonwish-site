@@ -7,13 +7,13 @@
 @use "./components/typewriter";
 @use "./components/buttons";
 @use "./components/textbox";
-@use "./components/bigHeader";
+@use "./components/caption";
 
 @use "./pages/services";
 @use "./pages/error404";
-@use "./pages/faq";
 @use "./pages/contact";
 @use "./pages/whyus";
+@use "./pages/faq";
 
 html,
 body {
@@ -28,6 +28,10 @@ input:-webkit-autofill:active {
   // -webkit-box-shadow: 0 0 0 30px #000000 inset !important;
   -webkit-text-fill-color: var(--color-text-primary) !important;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+button {
+  font-family: var(--josefin-sans);
 }
 
 * {
