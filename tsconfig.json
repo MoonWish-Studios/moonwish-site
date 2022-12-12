@@ -26,6 +26,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/(components)/SpaceBoi.jsx"
-  ],
+, "app/(components)/TypewriterC.jsx"  ],
   "exclude": ["node_modules"]
 }

@@ -6,7 +6,7 @@ source: https://sketchfab.com/3d-models/space-boi-f6a8c6a6727b4f2cb020c8b50bb2ee
 title: space boi
 */
 
-import React, { useRef } from "react";
+import React, { useMemo, useRef } from "react";
 import { Html, useGLTF } from "@react-three/drei";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +21,6 @@ export function Model(props) {
     if (modelRef.current !== undefined) {
       modelRef.current.rotation.y = clock.getElapsedTime() / 6;
     }
-    // groupRef.current.rotation.x = (-mouse.y * Math.PI) / 4;
   });
 
   return (

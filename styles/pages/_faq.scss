@@ -1,5 +1,16 @@
 .faqContainer {
   margin: 5em 0 8em 5em;
+  animation: 1s fadeIn 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .headerFaq {
