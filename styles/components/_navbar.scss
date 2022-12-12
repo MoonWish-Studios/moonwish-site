@@ -3,11 +3,19 @@
   // width: 99vw;
   grid-template-columns: 100px auto 100px;
   align-items: center;
-  background-color: var(--color-teritery);
   padding-left: 35px;
   padding-right: 49px;
   height: 5em;
   border-bottom: 1px solid #212121;
+
+  a {
+    text-decoration: none;
+    color: var(--color-text-navlink);
+    &:hover {
+      color: var(--color-text-highlight);
+      font-weight: 800;
+    }
+  }
 }
 
 .nav img {
@@ -29,20 +37,6 @@ ul {
   padding: 0 25px 0 25px;
   padding-inline-start: 0;
   position: relative;
-}
-
-.nav-links ul li a {
-  text-decoration: none;
-  color: var(--color-text-navlink);
-  font-size: 16px;
-  &:hover {
-    color: var(--color-text-primary);
-  }
-}
-
-.contact {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .contact ul li a {
