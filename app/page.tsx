@@ -1,6 +1,14 @@
 "use client";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { Html, OrbitControls, PerspectiveCamera, RoundedBox, useGLTF } from "@react-three/drei";
+import {
+  AsciiRenderer,
+  Html,
+  Loader,
+  OrbitControls,
+  PerspectiveCamera,
+  RoundedBox,
+  useGLTF,
+} from "@react-three/drei";
 import { Suspense, useRef } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Model } from "./(components)/SpaceBoi.jsx";
@@ -22,6 +30,11 @@ export default function Home() {
       <Canvas className="canvas" dpr={1} performance={{ min: 0.1 }}>
         <Scene />
       </Canvas>
+      <Loader
+        innerStyles={{ transform: "scale(2)", zIndex: "-999" }} // Flex layout style
+        dataStyles={{ color: "white", fontFamily: "var(--josefin-sans)" }} // Text styles
+        dataInterpolation={(p) => `Loading ${p.toFixed(0)}%`} // Text
+      />
     </div>
   );
 }
@@ -35,10 +48,8 @@ function Scene() {
       <ambientLight intensity={0.15} />
       <OrbitControls enableZoom={false} rotateSpeed={0.4} enablePan={false} />
       <Suspense fallback={null}>
-        {/* <MorphingBall /> */}
         <Model />
         <HomeTypeWriter />
-        {/* <RoundedBox /> */}
       </Suspense>
     </>
   );
