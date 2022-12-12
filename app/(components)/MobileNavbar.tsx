@@ -42,7 +42,7 @@ export default function MobileNavbar() {
       </div>
       {open && (
         <ul className="navItems">
-          <CustomLink href="/">Why Us</CustomLink>
+          <CustomLink href="/why-us">Why Us</CustomLink>
           <CustomLink href="/services">Services</CustomLink>
           <CustomLink href="/faq">FAQ</CustomLink>
         </ul>
