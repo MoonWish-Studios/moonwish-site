@@ -1,12 +1,9 @@
 export default function Head() {
-    return (
-        <>
-            <title>Moonwish Studios</title>
-            <meta
-                content="width=device-width, initial-scale=1"
-                name="viewport"
-            />
-            <link rel="icon" href="/favicon.ico" />
-        </>
-    );
+  return (
+    <>
+      <title>Moonwish Studios</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <link rel="icon" href="/assets/icons/moonwish-m-logo.svg" />
+    </>
+  );
 }
