@@ -22,6 +22,7 @@ export default function HomeTypeWriter() {
   return (
     <group ref={groupRef}>
       <Html
+        className="canvas-html"
         zIndexRange={[0, 0]}
         transform
         position={[0, 5.5, 0]}

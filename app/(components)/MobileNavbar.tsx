@@ -45,6 +45,7 @@ export default function MobileNavbar() {
           <CustomLink href="/why-us">Why Us</CustomLink>
           <CustomLink href="/services">Services</CustomLink>
           <CustomLink href="/faq">FAQ</CustomLink>
+          <CustomLink href="/contact">Contact</CustomLink>
         </ul>
       )}
     </>

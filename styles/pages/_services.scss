@@ -7,6 +7,7 @@
 
 .serviceContainer {
   margin: 5em 0 12em 5em;
+  animation: 1s fadeIn 1;
 }
 
 .serviceCard img {
@@ -69,6 +70,16 @@
   }
   .serviceCard img {
     width: 2.8vw;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 

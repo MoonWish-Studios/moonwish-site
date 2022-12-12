@@ -3,8 +3,18 @@
   padding: 0 8vw;
   padding-top: 5%;
   padding-bottom: 20vh;
+  animation: 1s fadeIn 1;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 .contact-wrapper {
   display: flex;
   align-items: center;
