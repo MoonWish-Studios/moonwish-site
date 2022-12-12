@@ -1,5 +1,5 @@
 .button {
-  background-color: #000000;
+  background-color: transparent;
   border-width: 1px;
   border-color: var(--color-text-primary);
   border-style: solid;
@@ -7,18 +7,25 @@
   width: 10em;
   height: 3.3em;
   color: var(--color-text-primary);
-  font-size: 16px;
+  font-size: (--font-regular);
   cursor: pointer;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 
   &:hover {
     transition: 0.1s ease-in-out;
     transform: translateY(-2.5px);
     color: var(--color-border-purple);
     border-color: var(--color-border-purple);
+  }
+
+  @media (max-width: 600px) {
+    padding: 10px 20px;
+    width: fit-content;
+    height: fit-content;
   }
 }
 

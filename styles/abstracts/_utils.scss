@@ -34,3 +34,16 @@
     color: var(--color-text-primary);
   }
 }
+
+.weak {
+  color: var(--color-text-fourth);
+}
+.strong {
+  background: -webkit-linear-gradient(right, #6f2cff -8.52%, #974afa 43.96%, #4b70f3 108.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green {
+  color: rgb(44, 178, 44);
+}

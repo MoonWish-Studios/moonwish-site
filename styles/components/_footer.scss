@@ -2,6 +2,7 @@ footer {
   width: 100%;
   height: auto;
   background-color: var(--color-background-secondary);
+  margin-top: 100px;
 }
 
 .footer-copyright {
@@ -30,7 +31,7 @@ footer {
 }
 
 .footer-group {
-  h3 {
+  h4 {
     color: var(--color-text-primary);
     margin-bottom: 5px;
     font-weight: 600;
