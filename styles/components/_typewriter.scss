@@ -2,8 +2,9 @@
   grid-row: 0 / 1;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  font-size: 4em;
+  font-size: var(--font-big);
   margin-top: 3em;
+  color: white;
 }
 
 .typewriter1 {

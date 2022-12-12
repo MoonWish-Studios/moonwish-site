@@ -4,15 +4,16 @@
 
 @use "./components/navbar";
 @use "./components/footer";
+@use "./components/typewriter";
 @use "./components/buttons";
 @use "./components/textbox";
-@use "./components/typewriter";
-@use "./components/bigHeader";
+@use "./components/caption";
 
 @use "./pages/services";
 @use "./pages/error404";
-@use "./pages/faq";
 @use "./pages/contact";
+@use "./pages/whyus";
+@use "./pages/faq";
 
 html,
 body {
@@ -27,6 +28,10 @@ input:-webkit-autofill:active {
   // -webkit-box-shadow: 0 0 0 30px #000000 inset !important;
   -webkit-text-fill-color: var(--color-text-primary) !important;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+button {
+  font-family: var(--josefin-sans);
 }
 
 * {
@@ -57,66 +62,31 @@ h2 {
     color: var(--color-text-primary);
   }
 }
+h3 {
+  font-size: var(--font-list);
+  color: var(--color-text-primary);
+  line-height: 120%;
+}
 
 .main {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  margin-left: 5em;
-  font-size: 1em;
+  user-select: none;
+  cursor: grab;
 }
 
-.typewriter {
-  grid-row: 0 / 1;
-  display: grid;
-  grid-template-rows: 1fr 0.3fr;
-  font-size: 4em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-.typewriter1 {
-  grid-row: 0 / 1;
-  display: flex;
-  align-items: flex-end;
-}
-.typewriter2 {
-  grid-row: 2 / 3;
-}
-
-.learnButton {
-  width: 20px;
-  height: 16px;
-  grid-column: 0 / 1;
-  grid-row: 2 / 3;
+.container {
   background-color: black;
-  color: white;
-  font-size: 18px;
-  border-color: white;
-  border-width: 1px;
-  cursor: pointer;
-  border-style: solid;
-  border-radius: 100px;
-}
-// border-radius: 4px;
-//     background: #256ce1;
-//     padding: 10px 22px;
-//     color: #fff;
-//     border: none;
-//     outline: none;
-//     cursor: pointer;
-//     transition: all 0.2s ease-in-out;
-//     text-decoration: none;
 
-.learnButton:hover {
-  background-color: rgb(184, 174, 163);
-  transition: 0.5s;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-  .color-text-third {
-    color: var(--color-text-third);
+  canvas {
+    width: 100vw;
+    height: 200vh;
+    cursor: grab;
   }
 }
+
+.canvas-link {
+  position: absolute;
+  top: 100vh;
+  width: 220px;
+}
+
+// moved typewriter to typerwriter.scss

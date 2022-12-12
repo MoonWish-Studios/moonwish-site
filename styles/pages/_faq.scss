@@ -1,86 +1,83 @@
 .faqContainer {
-    margin: 5em 0 8em 5em;
+  margin: 5em 0 8em 5em;
 }
 
 .headerFaq {
-    font-size: 4.3em;
-    font-weight: bold;
-    color: var(--color-primary);
+  font-size: 4.3em;
+  font-weight: bold;
+  color: var(--color-primary);
 }
 
 .faqDescription {
-    color: var(--color-text-secondary);
-    margin-bottom: 2em;
+  color: var(--color-text-secondary);
+  margin-bottom: 2.5em;
+  font-size: (--font-regular);
 }
 
 .faqTitle {
-    font-family: "__Josefin_Sans_d19b53";
-    font-size: 25px;
-    margin-left: 0.5em;
-    text-align: left;
+  font-size: var(--font-list);
+  margin-left: 0.5em;
+  text-align: left;
 }
 
 .dropdownButton {
-    background-color: black;
-    border-style: none;
-    border-bottom: 0.01px solid var(--color-border-primary);
-    width: 70vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: var(--color-text-primary);
-    padding: 0 0 0.8em 0;
-    cursor: pointer;
-    margin-bottom: 1em;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 1px solid var(--color-border-secondary);
+  width: 70vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--color-text-primary);
+  padding: 0 0 0.8em 0;
+  cursor: pointer;
+  margin-bottom: 2em;
 }
 .dropdownButtonOpen {
-    background-color: black;
-    border: none;
-    width: 70vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: var(--color-text-primary);
-    padding: 0 0 0.8em 0;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 70vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--color-text-primary);
+  padding: 0 0 0.8em 0;
+  cursor: pointer;
 }
 
 .dropdownCard_content {
-    color: var(--color-text-secondary);
-    padding-left: 2.5em;
-    font-size: 18px;
-    border-bottom: 0.01px solid var(--color-border-primary);
-    width: 70vw;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    line-height: 20px;
+  color: var(--color-text-secondary);
+  padding-left: 2.5em;
+  font-size: var(--font-description);
+  border-bottom: 0.01px solid var(--color-border-primary);
+  word-wrap: break-word;
+  padding-bottom: 0.8em;
+  margin-bottom: 1em;
+  width: 70vw;
+  line-height: 120%;
 }
 
 @media (max-width: 600px) {
-    .faqContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 2em 0 8em;
-    }
-    .headerFaq {
-        font-size: 3.3em;
-    }
-    .faqDescription {
-        text-align: center;
-        margin: 0 1.8em 2em;
-        font-size: 16px;
-    }
-    .faqTitle {
-        font-size: 21px;
-    }
-    .dropdownButton {
-        width: 83vw;
-    }
-    .dropdownButtonOpen {
-        width: 83vw;
-    }
-    .dropdownCard_content {
-        font-size: 16px;
-    }
+  .faqContainer {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    margin: 4vh 8vw;
+  }
+  .headerFaq {
+    align-self: center;
+    font-size: 3.3em;
+  }
+  .faqDescription {
+    text-align: center;
+  }
+  .dropdownButton {
+    width: 83vw;
+  }
+  .dropdownButtonOpen {
+    width: 83vw;
+  }
+  .dropdownCard_content {
+    width: 83vw;
+  }
 }
