@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import Textbox from "../(components)/Textbox";
 import LottieAstronaut from "../(components)/LottieAstronaut";
 import { useForm } from "@formspree/react";
@@ -24,6 +25,22 @@ export default function Contact() {
 
 function ContactDetails() {
   const [state, handleSubmit] = useForm("xoqbgoov");
+  useEffect(() => {
+    console.log(state.succeeded);
+  });
+
+  return (
+    <>
+      {state.succeeded === true ? (
+        <h1 style={{ color: "var(--color-text-secondary)" }}>Submitted Successfully!</h1>
+      ) : (
+        <Form state={state} handleSubmit={handleSubmit} />
+      )}
+    </>
+  );
+}
+
+function Form({ state, handleSubmit }: { state: any; handleSubmit: any }) {
   return (
     <form onSubmit={handleSubmit} className="contact-details">
       <Textbox state={state} regular label="Your Name" name="name" />
