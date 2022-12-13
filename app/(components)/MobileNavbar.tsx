@@ -3,11 +3,20 @@ import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import CustomLink from "./CustomLink";
-import { useState } from "react";
-
+import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 export default function MobileNavbar() {
   const [open, setOpen] = useState(false);
 
+  const pathname = usePathname();
+  const oldPathname = useRef(pathname);
+  useEffect(() => {
+    if (oldPathname.current !== pathname) {
+      setOpen(false);
+    }
+
+    oldPathname.current = pathname;
+  }, [pathname]);
   const hamburgerIcon = (
     <RxHamburgerMenu
       className="hamburgerIcon"

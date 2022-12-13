@@ -1,6 +1,9 @@
 "use client";
+import { useEffect } from "react";
 import Textbox from "../(components)/Textbox";
 import LottieAstronaut from "../(components)/LottieAstronaut";
+import { useForm } from "@formspree/react";
+import Form from "../(components)/Form";
 export default function Contact() {
   return (
     <div className="contact-section">
@@ -22,19 +25,20 @@ export default function Contact() {
 }
 
 function ContactDetails() {
+  const [state, handleSubmit] = useForm("xoqbgoov");
+
   return (
-    <div className="contact-details">
-      <Textbox regular label="Your Name" />
-      <Textbox regular label="Phone Number" />
-      <Textbox regular label="Business Name" />
-      <Textbox regular label="Business Email" />
-      <Textbox regular label="Location" />
-      <Textbox regular label="Website (leave blank if none)" />
-      <Textbox large label="How Can We Help You?" />
-      <button className="colorful-button grid-span-col">Submit</button>
-    </div>
+    <>
+      {state.succeeded === true ? (
+        <h1 style={{ color: "var(--color-text-secondary)" }}>Submitted Successfully!</h1>
+      ) : (
+        <Form state={state} handleSubmit={handleSubmit} />
+      )}
+    </>
   );
 }
+
+Form;
 function BigHeader({
   heading,
   caption,

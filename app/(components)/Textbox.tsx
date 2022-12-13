@@ -1,20 +1,29 @@
+import { useForm, ValidationError } from "@formspree/react";
+
 export default function Textbox({
   label,
   regular,
   large,
+  name,
+  type = "text",
+  state,
 }: {
   label: string;
+  name: string;
   regular?: boolean;
   large?: boolean;
+  type?: string;
+  state: any;
 }) {
   return (
     <div className={`textbox-wrapper ${large ? "grid-span-col" : ""}`}>
-      <label>{label}</label>
+      <label htmlFor={name}>{label}</label>
       {regular ? (
-        <input type="text" className="textbox-reg" />
+        <input name={name} type={type} className="textbox-reg" required />
       ) : (
-        <textarea className="textbox-large" />
+        <textarea name={name} className="textbox-large" required />
       )}
+      <ValidationError prefix={name} field={name} errors={state.errors} />
     </div>
   );
 }
