@@ -25,9 +25,6 @@ export default function Contact() {
 
 function ContactDetails() {
   const [state, handleSubmit] = useForm("xoqbgoov");
-  useEffect(() => {
-    console.log(state.succeeded);
-  });
 
   return (
     <>
