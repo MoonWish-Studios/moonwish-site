@@ -38,7 +38,6 @@ function ContactDetails() {
   );
 }
 
-Form;
 function BigHeader({
   heading,
   caption,
