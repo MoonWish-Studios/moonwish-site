@@ -85,6 +85,7 @@ h3 {
 }
 .canvas-html {
   cursor: grab;
+  user-select: none;
 }
 
 @keyframes fadeIn {
