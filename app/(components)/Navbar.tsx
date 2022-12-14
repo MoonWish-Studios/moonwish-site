@@ -10,7 +10,7 @@ export default function Navbar() {
         <Link href="/" className="logo">
           <Image
             src={"/assets/logo.svg"}
-            style={{ width: 100, height: "auto" }}
+            // style={{ width: 100, height: "auto" }}
             alt=""
             height={60}
             width={100}

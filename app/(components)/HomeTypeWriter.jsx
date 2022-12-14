@@ -27,7 +27,7 @@ export default function HomeTypeWriter() {
         rotation={[0.4, 0, 0]}
         center
         fullscreen
-        scale={0.47}
+        scale={0.53}
       >
         <main className="main">
           <TypewriterC />
