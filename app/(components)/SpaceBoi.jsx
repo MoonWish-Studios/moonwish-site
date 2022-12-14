@@ -28,7 +28,7 @@ export function Model(props) {
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
-            <Html
+            {/* <Html
               position={[0, 0, 2]}
               center
               className="canvas-link"
@@ -37,7 +37,7 @@ export function Model(props) {
               <Link className="next-link credit" href="https://sketchfab.com/silvercrow101">
                 3d artwork by silvercrow101
               </Link>
-            </Html>
+            </Html> */}
             <mesh
               castShadow
               receiveShadow
