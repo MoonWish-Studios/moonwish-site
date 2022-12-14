@@ -5,6 +5,8 @@ import { IoCloseOutline } from "react-icons/io5";
 import CustomLink from "./CustomLink";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 export default function MobileNavbar() {
   const [open, setOpen] = useState(false);
 
@@ -38,14 +40,16 @@ export default function MobileNavbar() {
     <>
       <div className="mobileNav">
         <div>
-          <a href="/" className="mobileLogo">
-            <img
+          <Link href="/" className="mobileLogo">
+            <Image
               src={"/assets/logo.svg"}
-              style={{ width: 100, height: "auto" }}
+              // style={{ width: 100, height: "auto" }}
               alt=""
-              className="logoImg"
+              height={30}
+              width={100}
+              // className="logoImg"
             />
-          </a>
+          </Link>
         </div>
         {open ? closeIcon : hamburgerIcon}
       </div>
