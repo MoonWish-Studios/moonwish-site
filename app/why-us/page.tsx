@@ -140,7 +140,7 @@ const whyLists = [
     id: nanoid(),
     heading: "We Maintain Your Website",
     description:
-      "Unlike traditional agencies, you don’t pay us thousands upfront, only to get a website to maintain on your own that be will be technically outdated in two years. We’ll take care of technical mainteance and updating content so that your website stay modernize",
+      "Unlike traditional agencies, you don’t pay us thousands upfront, only to get a website to maintain on your own that will be technically outdated in two years. We’ll take care of technical mainteance and updating content so that your website stay modernize",
   },
   {
     id: nanoid(),
