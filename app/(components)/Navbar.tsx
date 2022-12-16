@@ -7,11 +7,11 @@ export default function Navbar() {
   return (
     <div className="nav">
       <div>
-        <Link href="/" className="logo">
+        <Link href="/" className="logo" passHref>
           <Image
             src={"/assets/logo.svg"}
             // style={{ width: 100, height: "auto" }}
-            alt=""
+            alt="Moonwish Studio Logo"
             height={60}
             width={100}
             className="logoImg"

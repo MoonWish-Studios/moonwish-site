@@ -40,11 +40,11 @@ export default function MobileNavbar() {
     <>
       <div className="mobileNav">
         <div>
-          <Link href="/" className="mobileLogo">
+          <Link href="/" passHref className="mobileLogo">
             <Image
               src={"/assets/logo.svg"}
               // style={{ width: 100, height: "auto" }}
-              alt=""
+              alt="Moonwish Studio Logo"
               height={30}
               width={100}
               // className="logoImg"
