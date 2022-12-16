@@ -19,9 +19,16 @@ export default function Textbox({
     <div className={`textbox-wrapper ${large ? "grid-span-col" : ""}`}>
       <label htmlFor={name}>{label}</label>
       {regular ? (
-        <input name={name} type={type} className="textbox-reg" required />
+        <input
+          id={name}
+          aria-label={name}
+          name={name}
+          type={type}
+          className="textbox-reg"
+          required
+        />
       ) : (
-        <textarea name={name} className="textbox-large" required />
+        <textarea id={name} aria-label={name} name={name} className="textbox-large" required />
       )}
       <ValidationError prefix={name} field={name} errors={state.errors} />
     </div>
