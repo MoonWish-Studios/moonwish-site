@@ -8,8 +8,8 @@ export default function Button() {
     <>
       {/* <button onClick={clickMe}> */}
       {/* <p>Learn More</p> */}
-      <Link className="next-link button" href="/why-us">
-        Learn More
+      <Link about="Directs To Why Us Page" className="next-link button" href="/why-us">
+        Why Us
       </Link>
       {/* </button> */}
     </>
