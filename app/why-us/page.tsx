@@ -116,7 +116,8 @@ const whyLists = [
   {
     id: nanoid(),
     heading: "We are Transparent",
-    description: "We charge a flat rate of $100 per month. No hidden fees, no extra charge",
+    description:
+      "We break down exactly what we are going to do and how we are going to charge. We are very accomodating to your payment plan and will work to find a price that best fits your company's needs",
   },
   {
     id: nanoid(),
